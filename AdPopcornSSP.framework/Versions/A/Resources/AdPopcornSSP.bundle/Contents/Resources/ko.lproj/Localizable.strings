@@ -1,0 +1,24 @@
+/*
+ Localizable.strings
+ AdPOPcornSDKRevision
+ 
+ Created by wonje,song on 13. 2. 5..
+ Copyright (c) 2013년 wonje,song. All rights reserved.
+ */
+
+/* Title used for alert view title */
+"alertViewTitle" = "애드팝콘";
+
+/* Title used for alert view confirm button */
+"confirm" = "확인";
+
+"pleaseCheckInTheMailSettings" = "메일 설정 확인 부탁합니다.";
+
+"contactUsMailMessage" = "adPOPcorn과 함께할 역량 있는 기업의 참여를 기다립니다.\n<제휴문의>\n*회사명 : \n*담당자 : \n*연락처 : \n*이메일 : \n*내용 : ";
+
+"wrongURLAddress" = "잘못된 URL 주소입니다. 고객센터로 문의바랍니다.";
+"yes" = "예";
+"no" = "아니오";
+"freeDownload" = "무료 다운로드";
+"learnMore" = "더 알아보기";
+"videoWatchAgainMessage" = "비디오 시청이 완료되지 않았습니다. 다시 시청하시겠습니까?";

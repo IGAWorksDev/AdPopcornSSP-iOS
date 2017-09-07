@@ -1,0 +1,23 @@
+/*
+ Localizable.strings
+ AdPOPcornSDKRevision
+ 
+ Created by wonje,song on 13. 2. 5..
+ Copyright (c) 2013년 wonje,song. All rights reserved.
+ */
+
+/* Title used for alert view title */
+"alertViewTitle" = "adPOPcorn";
+/* Title used for alert view confirm button */
+"confirm" = "Confirm";
+
+"pleaseCheckInTheMailSettings" = "Please check in the mail settings.";
+
+"contactUsMailMessage" = "adPOPcorn is awating you to be with you!\n<Partnership Inquiry>\n*Company Name : \n*Contacting Person : \n*Contact No. : \n*Email : \n*Content : ";
+
+"wrongURLAddress" = "Invalid URL address. Please contact Customer Service.";
+"yes" = "yes";
+"no" = "no";
+"freeDownload" = "Free Download";
+"learnMore" = "Learn More";
+"videoWatchAgainMessage" = "You have not finished watching your video. Would you like to start again?";
