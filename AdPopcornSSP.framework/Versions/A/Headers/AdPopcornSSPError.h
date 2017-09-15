@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, SSPErrorCode) {
     AdPopcornSSPInvalidParameter = 1000,
     AdPopcornSSPUnknownServerError = 9999,
     AdPopcornSSPInvalidMediaKey = 2000,
-    AdPopcornSSPInvalidPlacementKey = 2030,
+    AdPopcornSSPInvalidPlacementId = 2030,
     AdPopcornSSPEmptyCampaign = 2100,
     AdPopcornSSPNativePlacementDoesNotInitialized = 3200,
     AdPopcornSSPMediationInvalidIntegrationKey = 4000,

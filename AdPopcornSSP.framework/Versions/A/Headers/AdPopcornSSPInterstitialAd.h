@@ -21,10 +21,10 @@
  @abstract
  interstitial ad instance 생성.
  @param appKey          app key
- @param placementKey         placement key
+ @param placementId    placement id
  @param viewController  interstitial ad를 노출시킬 view controller
  */
-- (instancetype)initWithKey:(NSString *)appKey placementKey:(NSString *)placementKey viewController:(UIViewController *)viewController NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithKey:(NSString *)appKey placementId:(NSString *)placementId viewController:(UIViewController *)viewController NS_DESIGNATED_INITIALIZER;
 
 /*!
  @abstract

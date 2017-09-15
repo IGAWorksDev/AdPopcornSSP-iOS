@@ -32,10 +32,10 @@ typedef enum _SSPBannerViewSizeType
  @param size            banner view size : 현재는 320 * 50만 지원.
  @param origin          banner view를 노출시킬 position(x, y).
  @param appKey          app key
- @param placementKey         placement key
+ @param placementId         placement id
  @param viewController  banner view를 노출시킬 view controller
  */
-- (instancetype)initWithBannerViewSize:(SSPBannerViewSizeType)size origin:(CGPoint)origin appKey:(NSString *)appKey placementKey:(NSString *)placementKey viewController:(UIViewController *)viewController NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithBannerViewSize:(SSPBannerViewSizeType)size origin:(CGPoint)origin appKey:(NSString *)appKey placementId:(NSString *)placementId viewController:(UIViewController *)viewController NS_DESIGNATED_INITIALIZER;
 
 /*!
  @abstract
