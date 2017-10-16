@@ -20,10 +20,9 @@ typedef enum _SSPBannerViewSizeType
 
 @interface AdPopcornSSPBannerView : UIView
 
-
 @property (nonatomic, weak) id<AdPopcornSSPBannerViewDelegate> delegate;
 
-// 최소 30초에서 최대 120초로 설정.
+// Default 시간은 60초이며, 30~120초 사이로 설정 가능. 단, -1초로 설정 시, refresh 사용 안함.
 @property (nonatomic, unsafe_unretained) NSInteger adRefreshRate;
 
 /*!
@@ -40,14 +39,13 @@ typedef enum _SSPBannerViewSizeType
 /*!
  @abstract
  banner 광고 요청.
- rotation 변경시, 화면에 맞는 banner 광고 요청시 사용.
  */
 - (void)loadRequest;
 
 
 /*!
  @abstract
- banner 스케쥴 정지.
+ banner 광고 노출 중지.
  */
 - (void)stopAd;
 
