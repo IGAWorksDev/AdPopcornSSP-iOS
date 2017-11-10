@@ -28,11 +28,16 @@
 
 /*!
  @abstract
+ interstitial 광고 요청.
+ */
+- (void)loadRequest;
+
+/*!
+ @abstract
  interstitial ad load가 완료되면(성공하면), presentFromViewController 메소드를 호출하여 노출시킨다.
  @param viewController  interstitial ad를 노출시킬 view controller
  */
 - (BOOL)presentFromViewController:(UIViewController *)viewController;
-
 @end
 
 @protocol AdPopcornSSPInterstitialAdDelegate <NSObject>
