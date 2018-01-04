@@ -18,6 +18,16 @@ typedef enum _SSPBannerViewSizeType
     SSPBannerViewSize300x250
 } SSPBannerViewSizeType;
 
+typedef enum _SSPBannerViewAnimationType
+{
+    SSPBannerViewAnimNone,
+    SSPBannerViewAnimCurlDown,
+    SSPBannerViewAnimCurlUp,
+    SSPBannerViewAnimFlipFromLeft,
+    SSPBannerViewAnimFlipFromRight,
+    SSPBannerViewAnimFadeIn
+} SSPBannerViewAnimationType;
+
 @interface AdPopcornSSPBannerView : UIView
 
 @property (nonatomic, weak) id<AdPopcornSSPBannerViewDelegate> delegate;
@@ -48,6 +58,24 @@ typedef enum _SSPBannerViewSizeType
  banner 광고 노출 중지.
  */
 - (void)stopAd;
+
+/*!
+ @abstract
+ banner 광고 노출 중지.
+ */
+- (void)stopAd:(BOOL)hidden;
+
+/*!
+ @abstract
+ banner 광고 배경 채우기 설정.
+ */
+- (void)setAutoBgColor:(BOOL)flag;
+
+/*!
+ @abstract
+ banner 광고 애니메이션 타입 설정.
+ */
+- (void)setAnimType:(SSPBannerViewAnimationType)animType;
 
 @end
 
