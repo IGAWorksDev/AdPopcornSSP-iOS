@@ -35,11 +35,9 @@ typedef enum _SSPAdType
 
 @interface AdPopcornSSPAdapter : NSObject
 {
-    UIViewController *_viewController;
     CGPoint _origin;
     CGSize _size;
     SSPAdType _adType;
-    AdPopcornSSPBannerView *_bannerView;
 }
 
 @property (nonatomic, unsafe_unretained) id<AdPopcornSSPAdapterDelegate> delegate;
@@ -47,6 +45,10 @@ typedef enum _SSPAdType
 @property (nonatomic, strong) NSDictionary *integrationKey;
 
 @property (nonatomic, unsafe_unretained, readonly) BOOL isSupportInterstitialAd;
+
+@property (nonatomic, weak) UIViewController *viewController;
+
+@property (nonatomic, weak) AdPopcornSSPBannerView *bannerView;
 
 - (void)setViewController:(UIViewController *)viewController origin:(CGPoint)origin size:(CGSize)size bannerView:(AdPopcornSSPBannerView *)bannerView;
 - (void)setViewController:(UIViewController *)viewController;

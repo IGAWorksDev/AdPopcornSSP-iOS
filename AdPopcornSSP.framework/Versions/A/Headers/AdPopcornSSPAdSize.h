@@ -12,7 +12,8 @@
 typedef enum _SSPBannerViewRealSizeType
 {
     SSPBannerViewSizeIphonePotriat320x50,
-    SSPBannerViewSizeIphonePotriat300x250
+    SSPBannerViewSizeIphonePotriat300x250,
+    SSPBannerViewSizeIphonePotriat320x100
 } SSPBannerViewRealSizeType;
 
 @interface AdPopcornSSPAdSize : NSObject

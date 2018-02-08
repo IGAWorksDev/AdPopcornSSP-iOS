@@ -16,6 +16,7 @@
 
 @property (nonatomic, weak) id<AdPopcornSSPInterstitialAdDelegate> delegate;
 @property (nonatomic, unsafe_unretained, getter = isInterstitialAdIsVisible) BOOL interstitialAdIsVisible;
+@property (nonatomic, weak) UIViewController *viewController;
 
 /*!
  @abstract

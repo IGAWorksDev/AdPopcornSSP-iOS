@@ -15,7 +15,8 @@
 typedef enum _SSPBannerViewSizeType
 {
     SSPBannerViewSize320x50,
-    SSPBannerViewSize300x250
+    SSPBannerViewSize300x250,
+    SSPBannerViewSize320x100
 } SSPBannerViewSizeType;
 
 typedef enum _SSPBannerViewAnimationType
@@ -35,6 +36,8 @@ typedef enum _SSPBannerViewAnimationType
 // Default 시간은 60초이며, 30~120초 사이로 설정 가능. 단, -1초로 설정 시, refresh 사용 안함.
 @property (nonatomic, unsafe_unretained) NSInteger adRefreshRate;
 
+@property (nonatomic, weak) UIViewController *viewController;
+
 /*!
  @abstract
  banner view instance 생성.
@@ -44,7 +47,7 @@ typedef enum _SSPBannerViewAnimationType
  @param placementId         placement id
  @param viewController  banner view를 노출시킬 view controller
  */
-- (instancetype)initWithBannerViewSize:(SSPBannerViewSizeType)size origin:(CGPoint)origin appKey:(NSString *)appKey placementId:(NSString *)placementId viewController:(UIViewController *)viewController NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithBannerViewSize:(SSPBannerViewSizeType)size origin:(CGPoint)origin appKey:(NSString *)appKey placementId:(NSString *)placementId viewController:(UIViewController *)viewController;
 
 /*!
  @abstract
