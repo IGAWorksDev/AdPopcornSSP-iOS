@@ -79,7 +79,6 @@ typedef enum _SSPBannerViewAnimationType
  banner 광고 애니메이션 타입 설정.
  */
 - (void)setAnimType:(SSPBannerViewAnimationType)animType;
-
 @end
 
 

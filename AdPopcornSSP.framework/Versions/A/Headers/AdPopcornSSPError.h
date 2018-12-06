@@ -19,12 +19,15 @@ typedef NS_ENUM(NSInteger, SSPErrorCode) {
     AdPopcornSSPInvalidMediaKey = 2000,
     AdPopcornSSPInvalidPlacementId = 2030,
     AdPopcornSSPEmptyCampaign = 2100,
+    AdPopcornSSPInvalidNativeAssetsConfig = 3300,
     AdPopcornSSPNativePlacementDoesNotInitialized = 3200,
     AdPopcornSSPMediationInvalidIntegrationKey = 4000,
     AdPopcornSSPMediationAdapterNotInitialized = 4001,
     AdPopcornSSPServerTimeout = 5000,
     AdPopcornSSPLoadAdFailed = 5001,
-    AdPopcornSSPNoAd = 5002
+    AdPopcornSSPNoAd = 5002,
+    AdPopcornSSPNoInterstitialLoaded = 5003,
+    AdPopcornSSPNoRewardVideoAdLoaded = 5005
 };
 
 @interface AdPopcornSSPError : NSError

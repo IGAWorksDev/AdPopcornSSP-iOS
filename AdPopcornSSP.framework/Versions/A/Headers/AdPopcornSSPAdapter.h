@@ -12,7 +12,7 @@
 
 #import "AdPopcornSSPBannerView.h"
 
-#import "AdPopcornSSPDemo.h"
+#import "AdPopcornSSP.h"
 
 @protocol AdPopcornSSPAdapterDelegate;
 
@@ -29,10 +29,6 @@ typedef enum _SSPAdType
     SSPNativeAdType
 } SSPAdType;
 
-// Set Logging Component
-#undef AdPopcornLogComponent
-#define AdPopcornLogComponent lcl_cAdPopcorn
-
 @interface AdPopcornSSPAdapter : NSObject
 {
     CGPoint _origin;
@@ -40,7 +36,7 @@ typedef enum _SSPAdType
     SSPAdType _adType;
 }
 
-@property (nonatomic, unsafe_unretained) id<AdPopcornSSPAdapterDelegate> delegate;
+@property (nonatomic, weak) id<AdPopcornSSPAdapterDelegate> delegate;
 
 @property (nonatomic, strong) NSDictionary *integrationKey;
 
@@ -49,6 +45,8 @@ typedef enum _SSPAdType
 @property (nonatomic, weak) UIViewController *viewController;
 
 @property (nonatomic, weak) AdPopcornSSPBannerView *bannerView;
+
+@property (nonatomic, unsafe_unretained, readonly) BOOL isSupportRewardVideoAd;
 
 - (void)setViewController:(UIViewController *)viewController origin:(CGPoint)origin size:(CGSize)size bannerView:(AdPopcornSSPBannerView *)bannerView;
 - (void)setViewController:(UIViewController *)viewController;
