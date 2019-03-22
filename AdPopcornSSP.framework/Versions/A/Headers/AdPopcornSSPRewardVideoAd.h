@@ -40,6 +40,9 @@
  @param viewController  reward video ad를 노출시킬 view controller
  */
 - (BOOL)presentFromViewController:(UIViewController *)viewController;
+- (BOOL)isReady;
+- (void)setManualMediationSchedule:(NSArray *)mediationSchedule;
+
 @end
 
 @protocol AdPopcornSSPRewardVideoAdDelegate <NSObject>
@@ -76,8 +79,26 @@
 
 /*!
  @abstract
- reward video 재생 완료 시 호출된다.
+ AP SSP reward video 재생 완료 시 호출된다.
  */
 - (void)AdPopcornSSPRewardVideoAdPlayCompletedWithQuantity:(long) quantity Currency:(NSString *)currency;
+
+/*!
+ @abstract
+ Mintegral reward video 재생 완료 시 호출된다.
+ */
+- (void)AdPopcornSSPRewardVideoAdMintegralVideoCompleted:(NSInteger)RewardAmount;
+
+/*!
+ @abstract
+ UnityAds reward video 재생 완료 시 호출된다.
+ */
+- (void)AdPopcornSSPRewardVideoAdUnityAdsVideoCompleted;
+
+/*!
+ @abstract
+ AdMob reward video 재생 완료 시 호출된다.
+ */
+- (void)AdPopcornSSPRewardVideoAdAdMobVideoCompleted:(double)RewardAmount;
 @end
 

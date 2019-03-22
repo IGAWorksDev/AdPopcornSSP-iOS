@@ -26,7 +26,8 @@ typedef enum _SSPAdType
 {
     SSPAdBannerType,
     SSPAdInterstitialType,
-    SSPNativeAdType
+    SSPNativeAdType,
+    SSPRewardVideoAdType
 } SSPAdType;
 
 @interface AdPopcornSSPAdapter : NSObject
@@ -48,19 +49,18 @@ typedef enum _SSPAdType
 
 @property (nonatomic, unsafe_unretained, readonly) BOOL isSupportRewardVideoAd;
 
-- (void)setViewController:(UIViewController *)viewController origin:(CGPoint)origin size:(CGSize)size bannerView:(AdPopcornSSPBannerView *)bannerView;
-- (void)setViewController:(UIViewController *)viewController;
-- (void)setNativeAdType;
-- (void)loadAd;
-- (void)showAd;
-- (void)closeAd;
-- (void)loadRequest;
-
-@property (NS_NONATOMIC_IOSONLY, readonly) CGSize adSize;
-
 - (void)setAge:(NSInteger)age;
 - (void)setGender:(SSPGender)gender;
+- (void)closeAd;
 
+- (void)setViewController:(UIViewController *)viewController origin:(CGPoint)origin size:(CGSize)size bannerView:(AdPopcornSSPBannerView *)bannerView;
+- (void)loadRequest;
+- (void)setViewController:(UIViewController *)viewController;
+- (void)loadAd;
+- (void)showAd;
+- (void)setRewardVideoViewController:(UIViewController *)viewController;
+
+@property (NS_NONATOMIC_IOSONLY, readonly) CGSize adSize;
 @end
 
 @protocol AdPopcornSSPAdapterDelegate <NSObject>
@@ -81,4 +81,13 @@ typedef enum _SSPAdType
 - (void)AdPopcornSSPAdapterNativeAdDidLoadAd:(NSObject *)nativeAd networkName:(NSString *)networkName;
 - (void)AdPopcornSSPAdapterNativeAd:(NSObject *)nativeAd didFailToReceiveAdWithError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
 
+
+- (void)AdPopcornSSPAdapterRewardVideoAdLoadSuccess;
+- (void)AdPopcornSSPAdapterRewardVideoAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterRewardVideoAdShowSuccess;
+- (void)AdPopcornSSPAdapterRewardVideoAdShowFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterRewardVideoAdClose;
+- (void)AdPopcornSSPAdapterOnMintegralVideoCompleted:(NSInteger) RewardAmount;
+- (void)AdPopcornSSPAdapterOnUnityAdsVideoCompleted;
+- (void)AdPopcornSSPAdapterOnAdMobVideoCompleted:(double) RewardAmount;
 @end
