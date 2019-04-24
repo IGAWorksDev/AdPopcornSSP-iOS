@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "AdPopcornSSP"
-s.version      = "2.0.1"
+s.version      = "2.0.2"
 s.summary      = "AdPopcornSSP.framework"
 s.homepage     = "https://github.com/IGAWorksDev/AdPopcornSSP-iOS"
 

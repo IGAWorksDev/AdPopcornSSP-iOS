@@ -31,7 +31,8 @@
 @protocol AdPopcornSSPVastAdapterDelegate <NSObject>
 
 @optional
-- (void)AdPopcornSSPVastAdsLoadedWithData;
-- (void)AdPoopcornSSPVastAdsFailedWithErrorData;
+- (void)AdPopcornSSPVastAdsShowSuccess;
+- (void)AdPopcornSSPVastAdsShowFailed;
+- (void)AdPopcornSSPVastAdsClosed;
 - (void)AdPopcornSSPVastAdsCompleted;
 @end
