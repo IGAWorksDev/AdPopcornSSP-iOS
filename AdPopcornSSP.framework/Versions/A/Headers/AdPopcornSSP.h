@@ -56,7 +56,7 @@ typedef enum _AdPopcornSSPLogLevel
  @discussion
  보고자 하는 로그 level을 info, debug, trace으로 설정한다.
  
- @param LogLevel log level
+ @param logLevel log level
  */
 + (void)setLogLevel:(AdPopcornSSPLogLevel)logLevel;
 

@@ -14,6 +14,8 @@
 
 #import "AdPopcornSSP.h"
 
+#import "AdPopcornSSPNativeAd.h"
+
 @protocol AdPopcornSSPAdapterDelegate;
 
 typedef enum _SSPMediationGender
@@ -49,6 +51,10 @@ typedef enum _SSPAdType
 
 @property (nonatomic, unsafe_unretained, readonly) BOOL isSupportRewardVideoAd;
 
+@property (nonatomic, unsafe_unretained, readonly) BOOL isSupportNativeAd;
+
+@property (nonatomic, weak) AdPopcornSSPNativeAd *adpopcornSSPNativeAd;
+
 - (void)setAge:(NSInteger)age;
 - (void)setGender:(SSPGender)gender;
 - (void)closeAd;
@@ -59,6 +65,7 @@ typedef enum _SSPAdType
 - (void)loadAd;
 - (void)showAd;
 - (void)setRewardVideoViewController:(UIViewController *)viewController;
+- (void)setNativeAdViewController:(UIViewController *)viewController nativeAdRenderer:(id)nativeAdRenderer rootNativeAdView:(AdPopcornSSPNativeAd *)adpopcornSSPNativeAd;
 
 @property (NS_NONATOMIC_IOSONLY, readonly) CGSize adSize;
 @end
@@ -78,8 +85,10 @@ typedef enum _SSPAdType
 
 - (void)AdPopcornSSPAdapterInterstitialWillLeaveApplication:(NSObject *)interstitialAd;
 
-- (void)AdPopcornSSPAdapterNativeAdDidLoadAd:(NSObject *)nativeAd networkName:(NSString *)networkName;
-- (void)AdPopcornSSPAdapterNativeAd:(NSObject *)nativeAd didFailToReceiveAdWithError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterNativeAdDidLoadAd;
+- (void)AdPopcornSSPAdapterNativeAdDidFailToReceiveAdWithError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterNativeAdImpression;
+- (void)AdPopcornSSPAdapterNativeAdClicked;
 
 
 - (void)AdPopcornSSPAdapterRewardVideoAdLoadSuccess;

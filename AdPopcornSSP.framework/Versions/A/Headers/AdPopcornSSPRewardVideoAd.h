@@ -42,6 +42,7 @@
 - (BOOL)presentFromViewController:(UIViewController *)viewController;
 - (BOOL)isReady;
 - (void)setManualMediationSchedule:(NSArray *)mediationSchedule;
+- (int)getCurrentNetwork;
 
 @end
 

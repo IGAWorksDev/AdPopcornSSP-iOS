@@ -13,28 +13,35 @@
 
 @protocol AdPopcornSSPNativeAdDelegate;
 
-@interface AdPopcornSSPNativeAd : NSObject
+@interface APSSPNativeAdRenderer : NSObject
 
-@property (nonatomic, weak) id<AdPopcornSSPNativeAdDelegate> delegate;
-@property (strong, nonatomic) UIView *nativeAdView;
+@property (strong, nonatomic) UIView *apSSPNativeAdView;
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *descLabel;
 @property (strong, nonatomic) UIImageView *iconImageView;
 @property (strong, nonatomic) UIImageView *mainImageView;
 
+@end
+
+@interface AdPopcornSSPNativeAd : UIView
+
+@property (nonatomic, weak) id<AdPopcornSSPNativeAdDelegate> delegate;
+
 /*!
  @abstract
  native ad instance 생성.
- @param appKey          app key
+ @param frame       native frame
+ @param appKey         app key
  @param placementId    placement id
+ @param viewController viewController
  */
-- (instancetype)initWithKey:(NSString *)appKey placementId:(NSString *)placementId NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithFrame:(CGRect)frame Key:(NSString *)appKey placementId:(NSString *)placementId viewController:(UIViewController *)viewController NS_DESIGNATED_INITIALIZER;
 
-- (void)setNativeAdView:(UIView *)nativeAdView;
-- (void)setIconImageView:(UIImageView *)iconImageView;
-- (void)setMainImageView:(UIImageView *)mainImageView;
-- (void)setTitleLabel:(UILabel *)titleLabel;
-- (void)setDescLabel:(UILabel *)descLabel;
+/*!
+ @abstract
+ native ad 광고 요청.
+ */
+- (void)setPlacementInfoWithAppKey:(NSString *)appKey placementId:(NSString *)placementId viewController:(UIViewController *)viewController;
 
 /*!
  @abstract
@@ -47,6 +54,36 @@
  native ad 광고 중단.
  */
 - (void)stopAd;
+
+/*!
+ @abstract
+ apssp renderer 및 super view 설정
+ */
+- (void)setApSSPRenderer:(id)apSSPNativeAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ admob renderer 및 super view 설정
+ */
+- (void)setAdMobRenderer:(id)admobNativeAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ mopub renderer 및 super view 설정
+ */
+- (void)setMopubRenderer:(id)mopubNativeAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ fan renderer 및 super view 설정
+ */
+- (void)setFANNativeRenderer:(id)fanNativeAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ fan native banner renderer 및 super view 설정
+ */
+- (void)setFANNativeBannerRenderer:(id)fanNativeBannerAdRenderer superView:(UIView *)uiView;
 @end
 
 @protocol AdPopcornSSPNativeAdDelegate <NSObject>
