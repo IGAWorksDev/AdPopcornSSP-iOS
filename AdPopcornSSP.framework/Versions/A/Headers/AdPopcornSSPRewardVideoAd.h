@@ -101,5 +101,11 @@
  AdMob reward video 재생 완료 시 호출된다.
  */
 - (void)AdPopcornSSPRewardVideoAdAdMobVideoCompleted:(double)RewardAmount;
+
+/*!
+ @abstract
+ AppNext reward video 재생 완료 시 호출된다.
+ */
+- (void)AdPopcornSSPRewardVideoAdAppNextAdsVideoCompleted;
 @end
 
