@@ -10,11 +10,11 @@
 #import "AdPopcornSSPError.h"
 
 
-@protocol AdPopcornSSPInterstitialAdDelegate;
+@protocol APSSPInterstitialAdDelegate;
 
 @interface AdPopcornSSPInterstitialAd : NSObject
 
-@property (nonatomic, weak) id<AdPopcornSSPInterstitialAdDelegate> delegate;
+@property (nonatomic, weak) id<APSSPInterstitialAdDelegate> delegate;
 @property (nonatomic, unsafe_unretained, getter = isInterstitialAdIsVisible) BOOL interstitialAdIsVisible;
 @property (nonatomic, weak) UIViewController *viewController;
 
@@ -41,50 +41,30 @@
 - (BOOL)presentFromViewController:(UIViewController *)viewController;
 @end
 
-@protocol AdPopcornSSPInterstitialAdDelegate <NSObject>
-
-/*!
- @abstract
- intersitial 광고 load 실패시, 호출된다.
- */
-- (void)AdPopcornSSPInterstitialAd:(AdPopcornSSPInterstitialAd *)interstitialAd didFailToReceiveAdWithError:(AdPopcornSSPError *)error;
+@protocol APSSPInterstitialAdDelegate <NSObject>
 
 @optional
 /*!
  @abstract
  intersitial 광고 load 완료시(성공시), 호출된다.
  */
-- (void)AdPopcornSSPInterstitialAdDidLoad:(AdPopcornSSPInterstitialAd *)interstitialAd;
+- (void)APSSPInterstitialAdLoadSuccess:(AdPopcornSSPInterstitialAd *)interstitialAd;
+
+/*!
+ @abstract
+ intersitial 광고 load 실패시, 호출된다.
+ */
+- (void)APSSPInterstitialAdLoadFail:(AdPopcornSSPInterstitialAd *)interstitialAd error:(AdPopcornSSPError *)error;
+
+/*!
+ @abstract
+ intersitial 광고 close시, 호출된다.
+ */
+- (void)APSSPInterstitialAdClosed:(AdPopcornSSPInterstitialAd *)interstitialAd;
 
 /*!
  @abstract
  intersitial 광고 클릭시, 호출된다.
  */
-- (void)AdPopcornSSPInterstitialAdWillLeaveApplication:(AdPopcornSSPInterstitialAd *)interstitialAd;
-
-/*!
- @abstract
- intersitial 광고 open 직전에 호출된다.
- */
-- (void)willOpenAdPopcornSSPInterstitialAd;
-
-/*!
- @abstract
- intersitial 광고 open 직후에 호출된다.
- */
-- (void)didOpenAdPopcornSSPInterstitialAd;
-
-/*!
- @abstract
- intersitial 광고 close 직전에 호출된다.
- */
-- (void)willCloseAdPopcornSSPInterstitialAd;
-
-/*!
- @abstract
- intersitial 광고 close 직후에 호출된다.
- */
-- (void)didCloseAdPopcornSSPInterstitialAd;
-
-
+- (void)APSSPInterstitialAdClicked:(AdPopcornSSPInterstitialAd *)interstitialAd;
 @end

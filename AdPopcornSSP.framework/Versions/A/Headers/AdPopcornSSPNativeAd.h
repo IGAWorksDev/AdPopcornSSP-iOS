@@ -11,7 +11,7 @@
 #import "AdPopcornSSPError.h"
 
 
-@protocol AdPopcornSSPNativeAdDelegate;
+@protocol APSSPNativeAdDelegate;
 
 @interface APSSPNativeAdRenderer : NSObject
 
@@ -25,7 +25,7 @@
 
 @interface AdPopcornSSPNativeAd : UIView
 
-@property (nonatomic, weak) id<AdPopcornSSPNativeAdDelegate> delegate;
+@property (nonatomic, weak) id<APSSPNativeAdDelegate> delegate;
 
 /*!
  @abstract
@@ -86,30 +86,30 @@
 - (void)setFANNativeBannerRenderer:(id)fanNativeBannerAdRenderer superView:(UIView *)uiView;
 @end
 
-@protocol AdPopcornSSPNativeAdDelegate <NSObject>
+@protocol APSSPNativeAdDelegate <NSObject>
 
 /*!
  @abstract
  native 광고 로드에 성공한 경우 호출된다.
  */
-- (void)AdPopcornSSPLoadNativeAdSuccess;
+- (void)APSSPNativeAdLoadSuccess:(AdPopcornSSPNativeAd *)nativeAd;
 
 /*!
  @abstract
  native 광고 로드에 실패한 경우 호출된다.
  */
-- (void)AdPopcornSSPLoadNativeAdFailedWithError:(AdPopcornSSPError *)error;
+- (void)APSSPNativeAdLoadFail:(AdPopcornSSPNativeAd *)nativeAd error:(AdPopcornSSPError *)error;
 
 /*!
  @abstract
  native 광고가 노출 될 때 호출된다.
  */
-- (void)AdPopcornSSPNativeAdImpression;
+- (void)APSSPNativeAdImpression:(AdPopcornSSPNativeAd *)nativeAd;
 
 /*!
  @abstract
  native 광고가 클릭 시 호출 된다.
  */
-- (void)AdPopcornSSPNativeAdClicked;
+- (void)APSSPNativeAdClicked:(AdPopcornSSPNativeAd *)nativeAd;
 @end
 

@@ -10,7 +10,7 @@
 
 #import "AdPopcornSSPError.h"
 
-@protocol AdPopcornSSPBannerViewDelegate;
+@protocol APSSPBannerViewDelegate;
 
 typedef enum _SSPBannerViewSizeType
 {
@@ -31,7 +31,7 @@ typedef enum _SSPBannerViewAnimationType
 
 @interface AdPopcornSSPBannerView : UIView
 
-@property (nonatomic, weak) id<AdPopcornSSPBannerViewDelegate> delegate;
+@property (nonatomic, weak) id<APSSPBannerViewDelegate> delegate;
 
 // Default 시간은 60초이며, 30~120초 사이로 설정 가능. 단, -1초로 설정 시, refresh 사용 안함.
 @property (nonatomic, unsafe_unretained) NSInteger adRefreshRate;
@@ -82,26 +82,24 @@ typedef enum _SSPBannerViewAnimationType
 @end
 
 
-@protocol AdPopcornSSPBannerViewDelegate <NSObject>
+@protocol APSSPBannerViewDelegate <NSObject>
 
 @optional
 /*!
  @abstract
  banner 광고 load 완료시(성공시), 호출된다.
  */
-- (void)AdPopcornSSPBannerViewDidLoadAd:(AdPopcornSSPBannerView *)bannerView;
+- (void)APSSPBannerViewLoadSuccess:(AdPopcornSSPBannerView *)bannerView;
 
 /*!
  @abstract
  banner 광고 load 실패시, 호출된다.
  */
-- (void)AdPopcornSSPBannerView:(AdPopcornSSPBannerView *)bannerView didFailToReceiveAdWithError:(AdPopcornSSPError *)error;
+- (void)APSSPBannerViewLoadFail:(AdPopcornSSPBannerView *)bannerView error:(AdPopcornSSPError *)error;
 
 /*!
  @abstract
  banner 광고 클릭시, 호출된다.
  */
-- (void)AdPopcornSSPBannerViewWillLeaveApplication:(AdPopcornSSPBannerView *)bannerView;
-
-
+- (void)APSSPBannerViewClicked:(AdPopcornSSPBannerView *)bannerView;
 @end

@@ -74,28 +74,29 @@ typedef enum _SSPAdType
 
 @optional
 
-- (void)AdPopcornSSPAdapterBannerViewDidLoadAd:(UIView *)bannerView adapter:(AdPopcornSSPAdapter *)adapter;
-- (void)AdPopcornSSPAdapterBannerView:(UIView *)bannerView didFailToReceiveAdWithError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+// Banner
+- (void)AdPopcornSSPAdapterBannerViewLoadSuccess:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterBannerViewLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterBannerViewClicked:(AdPopcornSSPAdapter *)adapter;
 
-- (void)AdPopcornSSPAdapterBannerViewWillLeaveApplication:(UIView *)bannerView;
+// Interstitial
+- (void)AdPopcornSSPAdapterInterstitialAdLoadSuccess:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterInterstitialAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterInterstitialAdClicked:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterInterstitialAdClosed:(AdPopcornSSPAdapter *)adapter;
 
-- (void)AdPopcornSSPAdapterInterstitialAdDidLoadAd:(NSObject *)interstitialAd;
+// Native
+- (void)AdPopcornSSPAdapterNativeAdLoadSuccess:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterNativeAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterNativeAdImpression:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterNativeAdClicked:(AdPopcornSSPAdapter *)adapter;
 
-- (void)AdPopcornSSPAdapterInterstitial:(NSObject *)interstitialAd didFailToReceiveAdWithError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
-
-- (void)AdPopcornSSPAdapterInterstitialWillLeaveApplication:(NSObject *)interstitialAd;
-
-- (void)AdPopcornSSPAdapterNativeAdDidLoadAd;
-- (void)AdPopcornSSPAdapterNativeAdDidFailToReceiveAdWithError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
-- (void)AdPopcornSSPAdapterNativeAdImpression;
-- (void)AdPopcornSSPAdapterNativeAdClicked;
-
-
-- (void)AdPopcornSSPAdapterRewardVideoAdLoadSuccess;
+// Reward Video
+- (void)AdPopcornSSPAdapterRewardVideoAdLoadSuccess:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterRewardVideoAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
-- (void)AdPopcornSSPAdapterRewardVideoAdShowSuccess;
+- (void)AdPopcornSSPAdapterRewardVideoAdShowSuccess:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterRewardVideoAdShowFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
-- (void)AdPopcornSSPAdapterRewardVideoAdClose;
+- (void)AdPopcornSSPAdapterRewardVideoAdClose:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterOnMintegralVideoCompleted:(NSInteger) RewardAmount;
 - (void)AdPopcornSSPAdapterOnUnityAdsVideoCompleted;
 - (void)AdPopcornSSPAdapterOnAdMobVideoCompleted:(double) RewardAmount;
