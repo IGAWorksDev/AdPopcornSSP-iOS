@@ -13,6 +13,13 @@
 
 @protocol APSSPRewardVideoAdDelegate;
 
+typedef enum _SSPRewardVideoAdStatus
+{
+    INIT_REWARD_VIDEO_AD,
+    RUN_REWARD_VIDEO_AD,
+    STOP_REWARD_VIDEO_AD
+} SSPRewardVideoAdStatus;
+
 @interface AdPopcornSSPRewardVideoAd : NSObject
 
 @property (nonatomic, weak) id<APSSPRewardVideoAdDelegate> delegate;

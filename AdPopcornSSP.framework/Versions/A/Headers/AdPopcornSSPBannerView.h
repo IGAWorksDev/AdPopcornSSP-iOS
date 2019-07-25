@@ -29,6 +29,13 @@ typedef enum _SSPBannerViewAnimationType
     SSPBannerViewAnimFadeIn
 } SSPBannerViewAnimationType;
 
+typedef enum _SSPBannerAdStatus
+{
+    INIT_BANNER,
+    RUN_BANNER,
+    STOP_BANNER
+} SSPBannerAdStatus;
+
 @interface AdPopcornSSPBannerView : UIView
 
 @property (nonatomic, weak) id<APSSPBannerViewDelegate> delegate;

@@ -13,6 +13,13 @@
 
 @protocol APSSPNativeAdDelegate;
 
+typedef enum _SSPNativeAdStatus
+{
+    INIT_NATIVE,
+    RUN_NATIVE,
+    STOP_NATIVE
+} SSPNativeAdStatus;
+
 @interface APSSPNativeAdRenderer : NSObject
 
 @property (strong, nonatomic) UIView *apSSPNativeAdView;

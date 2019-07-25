@@ -12,6 +12,13 @@
 
 @protocol APSSPInterstitialAdDelegate;
 
+typedef enum _SSPInterstitialAdStatus
+{
+    INIT_INTERSTITIAL,
+    RUN_INTERSTITIAL,
+    STOP_INTERSTITIAL
+} SSPInterstitialAdStatus;
+
 @interface AdPopcornSSPInterstitialAd : NSObject
 
 @property (nonatomic, weak) id<APSSPInterstitialAdDelegate> delegate;
