@@ -101,4 +101,7 @@ typedef enum _SSPAdType
 - (void)AdPopcornSSPAdapterOnUnityAdsVideoCompleted;
 - (void)AdPopcornSSPAdapterOnAdMobVideoCompleted:(double) RewardAmount;
 - (void)AdPopcornSSPAdapterOnAppNextAdsVideoCompleted;
+- (void)AdPopcornSSPAdapterOnAdColonyVideoCompleted;
+- (void)AdPopcornSSPAdapterOnVungleVideoCompleted;
+- (void)AdPopcornSSPAdapterOnAppLovinVideoCompleted;
 @end

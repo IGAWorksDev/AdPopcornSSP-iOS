@@ -114,5 +114,23 @@ typedef enum _SSPRewardVideoAdStatus
  AppNext reward video 재생 완료 시 호출된다.
  */
 - (void)APSSPRewardVideoAdAppNextAdsVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd;
+
+/*!
+ @abstract
+ AdColony reward video 재생 완료 시 호출된다.
+ */
+- (void)APSSPRewardVideoAdAdColonyVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd;
+
+/*!
+ @abstract
+ Vungle reward video 재생 완료 시 호출된다.
+ */
+- (void)APSSPRewardVideoAdVungleVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd;
+
+/*!
+ @abstract
+ AppLovin reward video 재생 완료 시 호출된다.
+ */
+- (void)APSSPRewardVideoAdAppLovinVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd;
 @end
 
