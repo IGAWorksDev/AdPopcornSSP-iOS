@@ -50,6 +50,7 @@ typedef enum _SSPRewardVideoAdStatus
 - (BOOL)isReady;
 - (void)setManualMediationSchedule:(NSArray *)mediationSchedule;
 - (int)getCurrentNetwork;
+- (void)stopAd;
 
 @end
 
