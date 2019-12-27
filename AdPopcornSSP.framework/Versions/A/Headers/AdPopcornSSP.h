@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol APSSPMediationLogDelegate;
+
 typedef enum _SSPGender
 {
     SSPGenderFemale = 1,
@@ -41,13 +43,14 @@ typedef enum _AdPopcornSSPLogLevel
 @property (nonatomic, unsafe_unretained, readonly) double latitude;
 @property (nonatomic, unsafe_unretained, readonly) double longitude;
 @property (nonatomic, unsafe_unretained, readonly) double accuracyInMeters;
+@property (nonatomic, unsafe_unretained) BOOL gdprAvailable;
+@property (nonatomic, weak) id<APSSPMediationLogDelegate> mediationLogDelegate;
 
 + (AdPopcornSSP *)sharedInstance;
 
 - (void)setLocationWithLatitude:(double)latitude
                       longitude:(double)longitude
                        accuracy:(double)accuracyInMeters;
-
 
 /*!
  @abstract
@@ -59,5 +62,22 @@ typedef enum _AdPopcornSSPLogLevel
  @param logLevel log level
  */
 + (void)setLogLevel:(AdPopcornSSPLogLevel)logLevel;
++ (void)gdprConsentAvailable:(BOOL)available;
++ (NSString *)getIDFA;
+
+@end
+
+@protocol APSSPMediationLogDelegate <NSObject>
+/*!
+ @abstract
+  특정 네트워크 광고 로드에 성공한 경우 호출된다.
+ */
+- (void)APSSPMediationLoadSuccess:(NSString *)placementId networkId:(NSInteger)networkId;
+
+/*!
+ @abstract
+ 특정 네트워크  광고 로드에 실패한 경우 호출된다.
+ */
+- (void)APSSPMediationLoadFailed:(NSString *)placementId networkId:(NSInteger)networkId;
 
 @end

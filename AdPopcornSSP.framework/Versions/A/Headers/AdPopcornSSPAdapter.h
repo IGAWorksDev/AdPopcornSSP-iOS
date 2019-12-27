@@ -29,7 +29,8 @@ typedef enum _SSPAdType
     SSPAdBannerType,
     SSPAdInterstitialType,
     SSPNativeAdType,
-    SSPRewardVideoAdType
+    SSPRewardVideoAdType,
+    SSPInterstitialVideoAdType
 } SSPAdType;
 
 @interface AdPopcornSSPAdapter : NSObject
@@ -53,6 +54,8 @@ typedef enum _SSPAdType
 
 @property (nonatomic, unsafe_unretained, readonly) BOOL isSupportNativeAd;
 
+@property (nonatomic, unsafe_unretained, readonly) BOOL isSupportInterstitialVideoAd;
+
 @property (nonatomic, weak) AdPopcornSSPNativeAd *adpopcornSSPNativeAd;
 
 - (void)setAge:(NSInteger)age;
@@ -66,6 +69,7 @@ typedef enum _SSPAdType
 - (void)showAd;
 - (void)setRewardVideoViewController:(UIViewController *)viewController;
 - (void)setNativeAdViewController:(UIViewController *)viewController nativeAdRenderer:(id)nativeAdRenderer rootNativeAdView:(AdPopcornSSPNativeAd *)adpopcornSSPNativeAd;
+- (void)setInterstitialVideoViewController:(UIViewController *)viewController;
 
 @property (NS_NONATOMIC_IOSONLY, readonly) CGSize adSize;
 @end
@@ -104,4 +108,11 @@ typedef enum _SSPAdType
 - (void)AdPopcornSSPAdapterOnAdColonyVideoCompleted;
 - (void)AdPopcornSSPAdapterOnVungleVideoCompleted;
 - (void)AdPopcornSSPAdapterOnAppLovinVideoCompleted;
+
+// Interstitial Video
+- (void)AdPopcornSSPAdapterInterstitialVideoAdLoadSuccess:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterInterstitialVideoAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterInterstitialVideoAdShowSuccess:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterInterstitialVideoAdShowFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterInterstitialVideoAdClose:(AdPopcornSSPAdapter *)adapter;
 @end

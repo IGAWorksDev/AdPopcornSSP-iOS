@@ -49,7 +49,7 @@ typedef enum _SSPRewardVideoAdStatus
 - (BOOL)presentFromViewController:(UIViewController *)viewController;
 - (BOOL)isReady;
 - (void)setManualMediationSchedule:(NSArray *)mediationSchedule;
-- (int)getCurrentNetwork;
+- (NSInteger)getCurrentNetwork;
 - (void)stopAd;
 
 @end
