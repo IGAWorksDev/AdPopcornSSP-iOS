@@ -81,5 +81,6 @@ typedef enum _SSPInterstitialVideoAdStatus
  interstitial video 광고가 닫히면 호출된다.
  */
 - (void)APSSPInterstitialVideoAdClosed:(AdPopcornSSPInterstitialVideoAd *)interstitialVideoAd;
+
 @end
 

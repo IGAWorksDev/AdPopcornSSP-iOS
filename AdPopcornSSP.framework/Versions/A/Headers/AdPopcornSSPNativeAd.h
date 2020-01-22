@@ -63,6 +63,12 @@ typedef enum _SSPNativeAdStatus
 - (void)stopAd;
 
 /*!
+@abstract
+placementId 가져오기
+*/
+- (NSString *)getPlacementId;
+
+/*!
  @abstract
  apssp renderer 및 super view 설정
  */

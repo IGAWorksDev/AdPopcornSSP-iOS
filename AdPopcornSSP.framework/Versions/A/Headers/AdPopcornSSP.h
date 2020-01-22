@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol APSSPMediationLogDelegate;
 
@@ -44,6 +45,7 @@ typedef enum _AdPopcornSSPLogLevel
 @property (nonatomic, unsafe_unretained, readonly) double longitude;
 @property (nonatomic, unsafe_unretained, readonly) double accuracyInMeters;
 @property (nonatomic, unsafe_unretained) BOOL gdprAvailable;
+@property (nonatomic, copy) NSString *userId;
 @property (nonatomic, weak) id<APSSPMediationLogDelegate> mediationLogDelegate;
 
 + (AdPopcornSSP *)sharedInstance;
@@ -64,6 +66,9 @@ typedef enum _AdPopcornSSPLogLevel
 + (void)setLogLevel:(AdPopcornSSPLogLevel)logLevel;
 + (void)gdprConsentAvailable:(BOOL)available;
 + (NSString *)getIDFA;
+
++ (void)openCSViewController:(UIViewController *)vController appKey:(NSString *)appKey userId:(NSString *)userId;
++ (void)setUserId:(NSString *)userId;
 
 @end
 

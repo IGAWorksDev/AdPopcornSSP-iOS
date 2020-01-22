@@ -108,6 +108,7 @@ typedef enum _SSPAdType
 - (void)AdPopcornSSPAdapterOnAdColonyVideoCompleted;
 - (void)AdPopcornSSPAdapterOnVungleVideoCompleted;
 - (void)AdPopcornSSPAdapterOnAppLovinVideoCompleted;
+- (void)onCompleteTrackingEvent:(NSInteger)adNetworkNo isCompleted:(bool)isCompleted;
 
 // Interstitial Video
 - (void)AdPopcornSSPAdapterInterstitialVideoAdLoadSuccess:(AdPopcornSSPAdapter *)adapter;
