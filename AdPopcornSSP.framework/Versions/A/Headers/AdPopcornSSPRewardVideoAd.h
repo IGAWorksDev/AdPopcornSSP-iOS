@@ -90,48 +90,23 @@ typedef enum _SSPRewardVideoAdStatus
  @abstract
  AP SSP reward video 재생 완료 시 호출된다.
  */
-- (void)APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd quantity:(long) quantity currency:(NSString *)currency;
+- (void)APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed;
 
-/*!
- @abstract
- Mintegral reward video 재생 완료 시 호출된다.
- */
--(void)APSSPRewardVideoAdMintegralVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd rewardAmount:(NSInteger)rewardAmount;
+- (void)APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd quantity:(long) quantity currency:(NSString *)currency __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
 
-/*!
- @abstract
- UnityAds reward video 재생 완료 시 호출된다.
- */
-- (void)APSSPRewardVideoAdUnityAdsVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd;
+-(void)APSSPRewardVideoAdMintegralVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd rewardAmount:(NSInteger)rewardAmount __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
 
-/*!
- @abstract
- AdMob reward video 재생 완료 시 호출된다.
- */
-- (void)APSSPRewardVideoAdAdMobVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd rewardAmount:(double)rewardAmount;
+- (void)APSSPRewardVideoAdUnityAdsVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
 
-/*!
- @abstract
- AppNext reward video 재생 완료 시 호출된다.
- */
-- (void)APSSPRewardVideoAdAppNextAdsVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd;
+- (void)APSSPRewardVideoAdAdMobVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd rewardAmount:(double)rewardAmount __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
 
-/*!
- @abstract
- AdColony reward video 재생 완료 시 호출된다.
- */
-- (void)APSSPRewardVideoAdAdColonyVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd;
+- (void)APSSPRewardVideoAdAppNextAdsVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
 
-/*!
- @abstract
- Vungle reward video 재생 완료 시 호출된다.
- */
-- (void)APSSPRewardVideoAdVungleVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd;
+- (void)APSSPRewardVideoAdAdColonyVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
 
-/*!
- @abstract
- AppLovin reward video 재생 완료 시 호출된다.
- */
-- (void)APSSPRewardVideoAdAppLovinVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd;
+- (void)APSSPRewardVideoAdVungleVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
+
+- (void)APSSPRewardVideoAdAppLovinVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
+ 
 @end
 

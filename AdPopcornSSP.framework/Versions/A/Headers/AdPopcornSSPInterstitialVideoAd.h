@@ -45,7 +45,7 @@ typedef enum _SSPInterstitialVideoAdStatus
  */
 - (BOOL)presentFromViewController:(UIViewController *)viewController;
 - (BOOL)isReady;
-- (int)getCurrentNetwork;
+- (long)getCurrentNetwork;
 - (void)stopAd;
 
 @end

@@ -75,6 +75,12 @@ typedef enum _AdPopcornSSPLogLevel
 @protocol APSSPMediationLogDelegate <NSObject>
 /*!
  @abstract
+  특정 네트워크 광고 로드 요청 시작 시 호출된다.
+ */
+- (void)APSSPMediationLoadStart:(NSString *)placementId networkId:(NSInteger)networkId;
+
+/*!
+ @abstract
   특정 네트워크 광고 로드에 성공한 경우 호출된다.
  */
 - (void)APSSPMediationLoadSuccess:(NSString *)placementId networkId:(NSInteger)networkId;
