@@ -74,4 +74,16 @@ typedef enum _SSPInterstitialAdStatus
  intersitial 광고 클릭시, 호출된다.
  */
 - (void)APSSPInterstitialAdClicked:(AdPopcornSSPInterstitialAd *)interstitialAd;
+
+/*!
+ @abstract
+ intersitial 광고 show 완료시(성공시), 호출된다.
+ */
+- (void)APSSPInterstitialAdShowSuccess:(AdPopcornSSPInterstitialAd *)interstitialAd;
+
+/*!
+ @abstract
+ intersitial 광고 show 실패시, 호출된다.
+ */
+- (void)APSSPInterstitialAdShowFail:(AdPopcornSSPInterstitialAd *)interstitialAd error:(AdPopcornSSPError *)error;
 @end

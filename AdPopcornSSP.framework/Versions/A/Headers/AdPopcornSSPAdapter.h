@@ -86,6 +86,8 @@ typedef enum _SSPAdType
 // Interstitial
 - (void)AdPopcornSSPAdapterInterstitialAdLoadSuccess:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterInterstitialAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterInterstitialAdShowSuccess:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterInterstitialAdShowFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterInterstitialAdClicked:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterInterstitialAdClosed:(AdPopcornSSPAdapter *)adapter;
 

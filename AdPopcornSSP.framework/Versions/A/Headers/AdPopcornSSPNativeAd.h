@@ -27,7 +27,7 @@ typedef enum _SSPNativeAdStatus
 @property (strong, nonatomic) UILabel *descLabel;
 @property (strong, nonatomic) UIImageView *iconImageView;
 @property (strong, nonatomic) UIImageView *mainImageView;
-
+@property (strong, nonatomic) UILabel *ctaLabel;
 @end
 
 @interface AdPopcornSSPNativeAd : UIView
