@@ -69,6 +69,12 @@ placementId 가져오기
 - (NSString *)getPlacementId;
 
 /*!
+@abstract
+기본 네이티브 ui 이외의 버튼에서 클릭 이벤트 발생 시, 수동으로 클릭 처리를 위한 API.
+*/
+- (void)manualClickEvent;
+
+/*!
  @abstract
  apssp renderer 및 super view 설정
  */
