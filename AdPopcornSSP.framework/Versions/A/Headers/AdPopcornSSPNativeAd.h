@@ -103,6 +103,13 @@ placementId 가져오기
  fan native banner renderer 및 super view 설정
  */
 - (void)setFANNativeBannerRenderer:(id)fanNativeBannerAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ mintegral renderer 및 super view 설정
+ */
+- (void)setMintegralNativeRenderer:(id)mintegralNativeAdRenderer superView:(UIView *)uiView;
+
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>
