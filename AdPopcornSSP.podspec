@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 s.name         = "AdPopcornSSP"
-s.version      = "2.1.9"
+s.version      = "2.2.0"
 s.summary      = "AdPopcornSSP.framework"
 s.homepage     = "https://github.com/IGAWorksDev/AdPopcornSSP-iOS"
 
 s.license      = {
 :type => 'Commercial',
 :text => <<-LICENSE
-All text and design is copyright 2006-2017 igaworks, Inc.
+All text and design is copyright 2006-2020 igaworks, Inc.
 
 All rights reserved.
 

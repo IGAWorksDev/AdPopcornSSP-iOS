@@ -49,13 +49,25 @@ typedef enum _SSPBannerAdStatus
 /*!
  @abstract
  banner view instance 생성.
- @param size            banner view size : 현재는 320 * 50만 지원.
+ @param size            banner view size
  @param origin          banner view를 노출시킬 position(x, y).
  @param appKey          app key
  @param placementId         placement id
  @param viewController  banner view를 노출시킬 view controller
  */
 - (instancetype)initWithBannerViewSize:(SSPBannerViewSizeType)size origin:(CGPoint)origin appKey:(NSString *)appKey placementId:(NSString *)placementId viewController:(UIViewController *)viewController;
+
+/*!
+ @abstract
+ banner view instance 생성.
+ @param size            banner view size
+ @param origin          banner view를 노출시킬 position(x, y).
+ @param appKey          app key
+ @param placementId         placement id
+ @param view  banner view를 노출시킬 UIView
+ @param viewController  banner view가 노출 될 UIView의 view controller
+ */
+- (instancetype)initWithBannerViewSize:(SSPBannerViewSizeType)size origin:(CGPoint)origin appKey:(NSString *)appKey placementId:(NSString *)placementId view:(UIView *)view rootViewController:(UIViewController *)viewController;
 
 /*!
  @abstract
