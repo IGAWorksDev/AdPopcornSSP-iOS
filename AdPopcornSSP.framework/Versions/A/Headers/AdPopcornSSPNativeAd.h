@@ -33,6 +33,7 @@ typedef enum _SSPNativeAdStatus
 @interface AdPopcornSSPNativeAd : UIView
 
 @property (nonatomic, weak) id<APSSPNativeAdDelegate> delegate;
+@property (nonatomic, unsafe_unretained) NSString *placementId;
 
 /*!
  @abstract
