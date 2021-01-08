@@ -17,7 +17,9 @@ typedef enum _SSPCustomAdType
 {
     SSPCustomAd320x50,
     SSPCustomAd300x250,
-    SSPCustomAd320x100
+    SSPCustomAd320x100,
+    SSPCustomAdInterstitial,
+    SSPCustomAdNativeAd
 } SSPCustomAdType;
 
 typedef enum _SSPCustomAdStatus
