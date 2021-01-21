@@ -24,7 +24,7 @@ typedef enum _SSPInterstitialAdStatus
 @property (nonatomic, weak) id<APSSPInterstitialAdDelegate> delegate;
 @property (nonatomic, unsafe_unretained, getter = isInterstitialAdIsVisible) BOOL interstitialAdIsVisible;
 @property (nonatomic, weak) UIViewController *viewController;
-@property (nonatomic, unsafe_unretained) NSString *placementId;
+@property (nonatomic, copy) NSString *placementId;
 /*!
  @abstract
  interstitial ad instance 생성.
