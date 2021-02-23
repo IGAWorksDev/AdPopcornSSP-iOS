@@ -52,7 +52,7 @@ typedef enum _SSPInterstitialVideoAdStatus
 @end
 
 @protocol APSSPInterstitialVideoAdDelegate <NSObject>
-
+@optional
 /*!
  @abstract
  interstitial video 광고 로드에 성공한 경우 호출된다.

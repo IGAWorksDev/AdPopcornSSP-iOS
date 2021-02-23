@@ -114,7 +114,7 @@ placementId 가져오기
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>
-
+@optional
 /*!
  @abstract
  native 광고 로드에 성공한 경우 호출된다.

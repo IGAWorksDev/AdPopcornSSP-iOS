@@ -56,7 +56,7 @@ typedef enum _SSPRewardVideoAdStatus
 @end
 
 @protocol APSSPRewardVideoAdDelegate <NSObject>
-
+@optional
 /*!
  @abstract
  video 광고 로드에 성공한 경우 호출된다.
