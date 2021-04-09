@@ -76,6 +76,12 @@ placementId 가져오기
 - (void)manualClickEvent;
 
 /*!
+@abstract
+광고 요청 결과 값이  No ad일 경우, view 영역을 hidden 시킬지 여부( 기본값 : YES)
+*/
+- (void)noAdViewHidden:(bool)hidden;
+
+/*!
  @abstract
  apssp renderer 및 super view 설정
  */
