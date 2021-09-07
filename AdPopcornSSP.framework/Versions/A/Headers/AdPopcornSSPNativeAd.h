@@ -117,6 +117,12 @@ placementId 가져오기
  */
 - (void)setMintegralNativeRenderer:(id)mintegralNativeAdRenderer superView:(UIView *)uiView;
 
+/*!
+ @abstract
+ gam(google ad manager) renderer 및 super view 설정
+ */
+- (void)setGAMRenderer:(id)gamNativeAdRenderer superView:(UIView *)uiView;
+
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>
