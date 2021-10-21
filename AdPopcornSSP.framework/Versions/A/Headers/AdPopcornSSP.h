@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol APSSPMediationLogDelegate;
+@protocol SDKInitializeDelegate;
 
 typedef enum _SSPGender
 {
@@ -38,22 +39,17 @@ typedef enum _AdPopcornSSPLogLevel
 
 @interface AdPopcornSSP : NSObject
 
++ (NSString *)getSDKVersion;
++ (NSString *)frameworkName;
+
 @property (nonatomic, unsafe_unretained) SSPGender gender;
 @property (nonatomic, unsafe_unretained) NSInteger age;
-
-@property (nonatomic, unsafe_unretained, readonly) double latitude;
-@property (nonatomic, unsafe_unretained, readonly) double longitude;
-@property (nonatomic, unsafe_unretained, readonly) double accuracyInMeters;
 @property (nonatomic, unsafe_unretained) BOOL gdprAvailable;
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, weak) id<APSSPMediationLogDelegate> mediationLogDelegate;
+@property (nonatomic, weak) id<SDKInitializeDelegate> initDelegate;
 
 + (AdPopcornSSP *)sharedInstance;
-
-- (void)setLocationWithLatitude:(double)latitude
-                      longitude:(double)longitude
-                       accuracy:(double)accuracyInMeters;
-
 /*!
  @abstract
  로그를 level를 설정한다.
@@ -66,10 +62,18 @@ typedef enum _AdPopcornSSPLogLevel
 + (void)setLogLevel:(AdPopcornSSPLogLevel)logLevel;
 + (void)gdprConsentAvailable:(BOOL)available;
 + (NSString *)getIDFA;
-
 + (void)openCSViewController:(UIViewController *)vController appKey:(NSString *)appKey userId:(NSString *)userId;
 + (void)setUserId:(NSString *)userId;
 
+/*!
+ @abstract
+ SDK 초기화를 진행한다
+ 
+ @discussion
+ 인앱 비딩을 사용하고자 하는 매체는 반드시 초기화 작업이 필요하다.
+ */
+
++ (void)initializeSDK:(NSString *)appKey;
 @end
 
 @protocol APSSPMediationLogDelegate <NSObject>
@@ -91,4 +95,8 @@ typedef enum _AdPopcornSSPLogLevel
  */
 - (void)APSSPMediationLoadFailed:(NSString *)placementId networkId:(NSInteger)networkId;
 
+@end
+
+@protocol SDKInitializeDelegate <NSObject>
+- (void)AdPopcornSSPSDKDidInitialize;
 @end

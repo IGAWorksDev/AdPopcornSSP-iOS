@@ -70,6 +70,8 @@ typedef enum _SSPAdType
 - (void)setRewardVideoViewController:(UIViewController *)viewController;
 - (void)setNativeAdViewController:(UIViewController *)viewController nativeAdRenderer:(id)nativeAdRenderer rootNativeAdView:(AdPopcornSSPNativeAd *)adpopcornSSPNativeAd;
 - (void)setInterstitialVideoViewController:(UIViewController *)viewController;
+- (NSString *)getBiddingToken;
+- (void)setBiddingData:(NSString *)biddingData impressionList:(NSMutableArray *)impTrackersListArray clickList: (NSMutableArray *)clickTrackersListArray;
 
 @property (NS_NONATOMIC_IOSONLY, readonly) CGSize adSize;
 @end
@@ -118,4 +120,7 @@ typedef enum _SSPAdType
 - (void)AdPopcornSSPAdapterInterstitialVideoAdShowSuccess:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterInterstitialVideoAdShowFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterInterstitialVideoAdClose:(AdPopcornSSPAdapter *)adapter;
+
+// Common
+- (void)impClickTracking:(NSString *)url;
 @end

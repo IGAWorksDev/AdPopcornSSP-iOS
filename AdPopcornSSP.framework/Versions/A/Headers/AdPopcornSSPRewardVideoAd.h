@@ -92,22 +92,5 @@ typedef enum _SSPRewardVideoAdStatus
  AP SSP reward video 재생 완료 시 호출된다.
  */
 - (void)APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed;
-
-- (void)APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd quantity:(long) quantity currency:(NSString *)currency __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
-
--(void)APSSPRewardVideoAdMintegralVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd rewardAmount:(NSInteger)rewardAmount __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
-
-- (void)APSSPRewardVideoAdUnityAdsVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
-
-- (void)APSSPRewardVideoAdAdMobVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd rewardAmount:(double)rewardAmount __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
-
-- (void)APSSPRewardVideoAdAppNextAdsVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
-
-- (void)APSSPRewardVideoAdAdColonyVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
-
-- (void)APSSPRewardVideoAdVungleVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
-
-- (void)APSSPRewardVideoAdAppLovinVideoCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd __attribute__((deprecated("Please migrate to using APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed")));
- 
 @end
 
