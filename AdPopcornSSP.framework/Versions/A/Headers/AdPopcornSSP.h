@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol APSSPMediationLogDelegate;
-@protocol SDKInitializeDelegate;
+@protocol APSSPSDKInitializeDelegate;
 
 typedef enum _SSPGender
 {
@@ -47,7 +47,7 @@ typedef enum _AdPopcornSSPLogLevel
 @property (nonatomic, unsafe_unretained) BOOL gdprAvailable;
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, weak) id<APSSPMediationLogDelegate> mediationLogDelegate;
-@property (nonatomic, weak) id<SDKInitializeDelegate> initDelegate;
+@property (nonatomic, weak) id<APSSPSDKInitializeDelegate> initializeDelegate;
 
 + (AdPopcornSSP *)sharedInstance;
 /*!
@@ -97,6 +97,6 @@ typedef enum _AdPopcornSSPLogLevel
 
 @end
 
-@protocol SDKInitializeDelegate <NSObject>
+@protocol APSSPSDKInitializeDelegate <NSObject>
 - (void)AdPopcornSSPSDKDidInitialize;
 @end
