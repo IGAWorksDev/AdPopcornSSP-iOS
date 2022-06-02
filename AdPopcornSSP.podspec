@@ -16,7 +16,7 @@ LICENSE
 }
 
 s.platform = :ios, '9.0'
-s.author       = { "mick" => "mick@igaworks.com" }
+s.author       = { "mick" => "mick.kim@adpopcorn.com" }
 s.source       = { :git => "https://github.com/IGAWorksDev/AdPopcornSSP-iOS.git", :tag => "#{s.version}" }
 s.resources = "AdPopcornSSP.bundle"
 s.ios.vendored_frameworks = 'AdPopcornSSP.framework'
