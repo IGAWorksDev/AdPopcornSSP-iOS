@@ -72,6 +72,7 @@ typedef enum _SSPAdType
 - (void)setInterstitialVideoViewController:(UIViewController *)viewController;
 - (NSString *)getBiddingToken;
 - (void)setBiddingData:(NSString *)biddingData impressionList:(NSMutableArray *)impTrackersListArray clickList: (NSMutableArray *)clickTrackersListArray;
+- (void)setMute:(bool)mute;
 
 @property (NS_NONATOMIC_IOSONLY, readonly) CGSize adSize;
 @end
@@ -105,13 +106,6 @@ typedef enum _SSPAdType
 - (void)AdPopcornSSPAdapterRewardVideoAdShowSuccess:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterRewardVideoAdShowFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterRewardVideoAdClose:(AdPopcornSSPAdapter *)adapter;
-- (void)AdPopcornSSPAdapterOnMintegralVideoCompleted:(NSInteger) RewardAmount;
-- (void)AdPopcornSSPAdapterOnUnityAdsVideoCompleted;
-- (void)AdPopcornSSPAdapterOnAdMobVideoCompleted:(double) RewardAmount;
-- (void)AdPopcornSSPAdapterOnAppNextAdsVideoCompleted;
-- (void)AdPopcornSSPAdapterOnAdColonyVideoCompleted;
-- (void)AdPopcornSSPAdapterOnVungleVideoCompleted;
-- (void)AdPopcornSSPAdapterOnAppLovinVideoCompleted;
 - (void)onCompleteTrackingEvent:(NSInteger)adNetworkNo isCompleted:(bool)isCompleted;
 
 // Interstitial Video

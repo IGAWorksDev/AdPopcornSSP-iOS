@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "AdPopcornSSPError.h"
 
-
 @protocol APSSPInterstitialAdDelegate;
 
 typedef enum _SSPInterstitialAdStatus
@@ -22,7 +21,6 @@ typedef enum _SSPInterstitialAdStatus
 @interface AdPopcornSSPInterstitialAd : NSObject
 
 @property (nonatomic, weak) id<APSSPInterstitialAdDelegate> delegate;
-@property (nonatomic, unsafe_unretained, getter = isInterstitialAdIsVisible) BOOL interstitialAdIsVisible;
 @property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, copy) NSString *placementId;
 /*!
