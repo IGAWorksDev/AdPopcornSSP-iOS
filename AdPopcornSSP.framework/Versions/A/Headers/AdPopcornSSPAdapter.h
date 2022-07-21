@@ -73,7 +73,7 @@ typedef enum _SSPAdType
 - (NSString *)getBiddingToken;
 - (void)setBiddingData:(NSString *)biddingData impressionList:(NSMutableArray *)impTrackersListArray clickList: (NSMutableArray *)clickTrackersListArray;
 - (void)setMute:(bool)mute;
-
+- (void)setInAppBiddingMode:(bool)isInAppBiddingMode;
 @property (NS_NONATOMIC_IOSONLY, readonly) CGSize adSize;
 @end
 
