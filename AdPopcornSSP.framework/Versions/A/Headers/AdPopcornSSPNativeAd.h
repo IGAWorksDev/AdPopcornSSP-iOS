@@ -28,6 +28,17 @@ typedef enum _SSPNativeAdStatus
 @property (strong, nonatomic) UIImageView *iconImageView;
 @property (strong, nonatomic) UIImageView *mainImageView;
 @property (strong, nonatomic) UILabel *ctaLabel;
+
+@property (nonatomic, unsafe_unretained) BOOL privacyIconVisibility;
+@property (nonatomic, unsafe_unretained) NSInteger privacyIconPosition;
+@property (nonatomic, unsafe_unretained) NSInteger privacyIconWidth;
+@property (nonatomic, unsafe_unretained) NSInteger privacyIconHeight;
+@property (nonatomic, unsafe_unretained) NSInteger privacyIconTopMargin;
+@property (nonatomic, unsafe_unretained) NSInteger privacyIconLeftMargin;
+@property (nonatomic, unsafe_unretained) NSInteger privacyIconBottomtMargin;
+@property (nonatomic, unsafe_unretained) NSInteger privacyIconRightMargin;
+@property (nonatomic, copy) NSString *placementId;
+
 @end
 
 @interface AdPopcornSSPNativeAd : UIView
