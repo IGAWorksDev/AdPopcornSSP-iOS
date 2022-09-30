@@ -139,6 +139,12 @@ placementId 가져오기
  adfit renderer 및 super view 설정
  */
 - (void)setAdFitRenderer:(id)adfitNativeAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ naver ad manager renderer 및 super view 설정
+ */
+- (void)setNAMRenderer:(id)namNativeAdRenderer superView:(UIView *)uiView;
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>
