@@ -17,7 +17,8 @@ typedef enum _SSPBannerViewSizeType
 {
     SSPBannerViewSize320x50,
     SSPBannerViewSize300x250,
-    SSPBannerViewSize320x100
+    SSPBannerViewSize320x100,
+    SSPBannerViewSize360x185
 } SSPBannerViewSizeType;
 
 typedef enum _SSPBannerViewAnimationType
