@@ -31,12 +31,16 @@ typedef enum _SSPCustomAdStatus
 
 @interface AdPopcornSSPCustomAd : NSObject
 @property (nonatomic, weak) id<APSSPCustomAdDelegate> delegate;
+@property (nonatomic, copy) NSString *placementId;
 
 - (instancetype)initWithAppKey:(NSString *)appKey placementId:(NSString *)placementId adType:(SSPCustomAdType)adType;
 - (void)loadAd;
 - (void)stopAd;
 - (void)reportImpression;
 - (void)reportClick;
+- (NSMutableArray *)getImpTrackersList;
+- (NSMutableArray *)getClickTrackersList;
+
 @end
 
 @protocol APSSPCustomAdDelegate <NSObject>

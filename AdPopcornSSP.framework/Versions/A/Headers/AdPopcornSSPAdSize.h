@@ -9,18 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AdPopcornSSPBannerView.h"
 
-typedef enum _SSPBannerViewRealSizeType
-{
-    SSPBannerViewSizeIphonePotriat320x50,
-    SSPBannerViewSizeIphonePotriat300x250,
-    SSPBannerViewSizeIphonePotriat320x100,
-    SSPBannerViewSizeIphonePotriat360x185
-} SSPBannerViewRealSizeType;
-
 @interface AdPopcornSSPAdSize : NSObject
 
 + (CGSize)adSize:(SSPBannerViewSizeType)bannerViewSizeType;
-
-+ (CGSize)adRealSize:(SSPBannerViewRealSizeType)bannerViewRealSizeType;
-
 @end
