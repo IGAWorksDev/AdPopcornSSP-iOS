@@ -38,6 +38,7 @@ typedef enum _SSPNativeAdStatus
 @property (nonatomic, unsafe_unretained) NSInteger privacyIconBottomtMargin;
 @property (nonatomic, unsafe_unretained) NSInteger privacyIconRightMargin;
 @property (nonatomic, copy) NSString *placementId;
+@property (nonatomic, unsafe_unretained) BOOL useTemplate;
 
 @end
 
