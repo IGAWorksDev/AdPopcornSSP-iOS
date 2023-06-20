@@ -45,6 +45,7 @@ typedef enum _SSPNativeAdStatus
 @interface AdPopcornSSPNativeAd : UIView
 
 @property (nonatomic, weak) id<APSSPNativeAdDelegate> delegate;
+@property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, copy) NSString *placementId;
 
 /*!
@@ -146,6 +147,12 @@ placementId 가져오기
  naver ad manager renderer 및 super view 설정
  */
 - (void)setNAMRenderer:(id)namNativeAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ applovin max renderer 및 super view 설정
+ */
+- (void)setAppLovinMaxRenderer:(id)appLovinMaxNativeAdRenderer superView:(UIView *)uiView;
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>
