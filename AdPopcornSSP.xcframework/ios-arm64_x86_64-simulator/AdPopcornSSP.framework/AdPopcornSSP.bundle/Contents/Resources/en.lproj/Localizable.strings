@@ -1,0 +1,54 @@
+/*
+ Localizable.strings
+ AdPOPcornSDKRevision
+ 
+ Created by wonje,song on 13. 2. 5..
+ Copyright (c) 2013년 wonje,song. All rights reserved.
+ */
+
+/* Title used for alert view title */
+"alertViewTitle" = "애드팝콘";
+
+/* Title used for alert view confirm button */
+"confirm" = "확인";
+
+"pleaseCheckInTheMailSettings" = "메일 설정 확인 부탁합니다.";
+
+"contactUsMailMessage" = "adPOPcorn과 함께할 역량 있는 기업의 참여를 기다립니다.\n<제휴문의>\n*회사명 : \n*담당자 : \n*연락처 : \n*이메일 : \n*내용 : ";
+
+"wrongURLAddress" = "잘못된 URL 주소입니다. 고객센터로 문의바랍니다.";
+"yes" = "예";
+"no" = "아니오";
+"freeDownload" = "무료 다운로드";
+"learnMore" = "더 알아보기";
+"videoWatchAgainMessage" = "비디오 시청이 완료되지 않았습니다. 다시 시청하시겠습니까?";
+
+"confirm" = "확인";
+"inquiry" = "문의내용";
+"inquiryDetail" = "문의내용(광고를 보았던 대략적인 시간을 꼭 기입해 주세요)";
+"receiveAReplyEmail" = "이메일";
+"alertNoEmailMessage" = "회신 받을 이메일 주소를 입력해 주세요.";
+"alertNoAskMessage" = "문의 내용을 입력해 주세요.";
+"alertCSAddedMessage" = "정상적으로 문의가 접수되었습니다.";
+"alertSendCSFailed" = "메일 전송이 실패하였습니다.";
+"wrongEmailFormatMessage" = "이메일 형식이 맞지 않습니다. 확인 후 다시 입력해주세요.";
+"customerService" = "고객센터";
+"send" = "보내기";
+"notice" = "알림";
+
+"moreCSCheckQuestion" = "...더보기";
+"csFaqTitleMessage" = "잠깐!문의 전 아래 사항을 체크해 볼까요?";
+
+"faqMessage1" = "1.광고를 끝까지 시청했나요?\n";
+"faqMessage2" = "2.시청 도중 어플이 비정상적으로 종료되진 않았나요?\n";
+"faqMessage3" = "3.광고가 시작되지 않은 건 아닐까요?\n";
+
+"csOptionTitle" = "위 내용에 해당되지 않는데도 적립되지 않았다면 아래 내용을 입력해주세요.";
+"required" = "(필수)";
+
+"cs_notice1" = "필수 정보값이 입력되지 않았습니다.";
+"cs_notice2" = "*문의답변은 영업일 기준 2~3일 이내에 입력하신 이메일로 보내드립니다.";
+
+"directInput" = "직접입력";
+"cs" = "문의하기";
+
