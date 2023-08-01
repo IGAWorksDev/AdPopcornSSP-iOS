@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "AdPopcornSSP"
-s.version      = "2.4.9"
+s.version      = "2.5.0"
 s.summary      = "AdPopcornSSP.framework"
 s.homepage     = "https://github.com/IGAWorksDev/AdPopcornSSP-iOS"
 s.license      = {
@@ -19,8 +19,4 @@ s.ios.vendored_frameworks = "AdPopcornSSP.xcframework"
 s.frameworks = 'AdSupport', 'MobileCoreServices', 'MessageUI', 'MediaPlayer', 'AVKit', 'AVFoundation', 'CoreMedia', 'CoreTelephony', 'SystemConfiguration', 'WebKit', 'Security', 'UIKit', 'CoreGraphics', 'QuartzCore'
 s.libraries = 'xml2'
 s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
-s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-}
-s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
