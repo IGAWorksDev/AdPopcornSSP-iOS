@@ -11,7 +11,7 @@ s.license      = {
     https://github.com/IGAWorksDev/AdPopcornSSP-iOS
     LICENSE
 }
-s.platform = :ios, '9.0'
+s.platform = :ios, '11.0'
 s.author       = { "mick" => "mick@igaworks.com" }
 s.source       = { :git => "https://github.com/IGAWorksDev/AdPopcornSSP-iOS.git", :tag => "#{s.version}" }
 s.resources = "AdPopcornSSP.bundle"
