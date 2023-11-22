@@ -7,14 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import <UIKit/UIKit.h>
 
 #import "AdPopcornSSPBannerView.h"
-
 #import "AdPopcornSSP.h"
-
 #import "AdPopcornSSPNativeAd.h"
+#import "AdPopcornSSPReactNativeAd.h"
 
 @protocol AdPopcornSSPAdapterDelegate;
 
@@ -30,7 +28,8 @@ typedef enum _SSPAdType
     SSPAdInterstitialType,
     SSPNativeAdType,
     SSPRewardVideoAdType,
-    SSPInterstitialVideoAdType
+    SSPInterstitialVideoAdType,
+    SSPReactNativeAdType,
 } SSPAdType;
 
 @interface AdPopcornSSPAdapter : NSObject
@@ -58,6 +57,8 @@ typedef enum _SSPAdType
 
 @property (nonatomic, weak) AdPopcornSSPNativeAd *adpopcornSSPNativeAd;
 
+@property (nonatomic, weak) AdPopcornSSPReactNativeAd *adpopcornSSPReactNativeAd;
+
 - (void)setAge:(NSInteger)age;
 - (void)setGender:(SSPGender)gender;
 - (void)closeAd;
@@ -74,6 +75,8 @@ typedef enum _SSPAdType
 - (void)setBiddingData:(NSString *)biddingData impressionList:(NSMutableArray *)impTrackersListArray clickList: (NSMutableArray *)clickTrackersListArray;
 - (void)setMute:(bool)mute;
 - (void)setInAppBiddingMode:(bool)isInAppBiddingMode;
+- (void)setViewController:(UIViewController *)viewController reactNativeAd:(AdPopcornSSPReactNativeAd *)reactNativeAd;
+
 @property (NS_NONATOMIC_IOSONLY, readonly) CGSize adSize;
 @end
 
@@ -115,6 +118,12 @@ typedef enum _SSPAdType
 - (void)AdPopcornSSPAdapterInterstitialVideoAdShowFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterInterstitialVideoAdClose:(AdPopcornSSPAdapter *)adapter;
 
+// ReactNative
+- (void)AdPopcornSSPAdapterReactNativeAdLoadSuccess:(AdPopcornSSPAdapter *)adapter adSize:(CGSize)adSize;
+- (void)AdPopcornSSPAdapterReactNativeAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterReactNativeAdImpression:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterReactNativeAdClicked:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterReactNativeAdSizeChanged:(AdPopcornSSPAdapter *)adapter adSize:(CGSize)adSize;
 // Common
 - (void)impClickTracking:(NSString *)url;
 @end

@@ -60,7 +60,7 @@ typedef enum _SSPNativeAdStatus
 
 /*!
  @abstract
- native ad 광고 요청.
+ native ad 광고 연결
  */
 - (void)setPlacementInfoWithAppKey:(NSString *)appKey placementId:(NSString *)placementId viewController:(UIViewController *)viewController;
 
@@ -153,6 +153,12 @@ placementId 가져오기
  applovin max renderer 및 super view 설정
  */
 - (void)setAppLovinMaxRenderer:(id)appLovinMaxNativeAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ adop renderer 및 super view 설정
+ */
+- (void)setADOPRenderer:(id)adopNativeAdRenderer superView:(UIView *)uiView;
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>

@@ -17,3 +17,5 @@
 #import "AdPopcornSSPInterstitialVideoAd.h"
 #import "AdPopcornSSPWKScriptMessageHandler.h"
 #import "AdPopcornSSPError.h"
+#import "AdPopcornSSPReactNativeAd.h"
+#import "AdPopcornSSPSplashAd.h"
