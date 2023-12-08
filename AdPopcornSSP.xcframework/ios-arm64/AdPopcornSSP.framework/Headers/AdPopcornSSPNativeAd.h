@@ -108,12 +108,6 @@ placementId 가져오기
 
 /*!
  @abstract
- mopub renderer 및 super view 설정
- */
-- (void)setMopubRenderer:(id)mopubNativeAdRenderer superView:(UIView *)uiView;
-
-/*!
- @abstract
  fan renderer 및 super view 설정
  */
 - (void)setFANNativeRenderer:(id)fanNativeAdRenderer superView:(UIView *)uiView;
@@ -159,6 +153,12 @@ placementId 가져오기
  adop renderer 및 super view 설정
  */
 - (void)setADOPRenderer:(id)adopNativeAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ momento renderer 및 super view 설정
+ */
+- (void)setMomentoRenderer:(id)momentoNativeAdRenderer superView:(UIView *)uiView;
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>
