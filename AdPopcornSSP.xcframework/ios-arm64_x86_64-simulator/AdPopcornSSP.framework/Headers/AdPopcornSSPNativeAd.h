@@ -186,5 +186,11 @@ placementId 가져오기
  native 광고가 클릭 시 호출 된다.
  */
 - (void)APSSPNativeAdClicked:(AdPopcornSSPNativeAd *)nativeAd;
+
+/*!
+ @abstract
+ native 광고를 닫을 때 호출된다(NAM 전용)
+ */
+- (void)APSSPNativeAdHidden:(AdPopcornSSPNativeAd *)nativeAd;
 @end
 

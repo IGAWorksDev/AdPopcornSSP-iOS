@@ -102,6 +102,7 @@ typedef enum _SSPAdType
 - (void)AdPopcornSSPAdapterNativeAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterNativeAdImpression:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterNativeAdClicked:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterNativeAdHidden:(AdPopcornSSPAdapter *)adapter;
 
 // Reward Video
 - (void)AdPopcornSSPAdapterRewardVideoAdLoadSuccess:(AdPopcornSSPAdapter *)adapter;
