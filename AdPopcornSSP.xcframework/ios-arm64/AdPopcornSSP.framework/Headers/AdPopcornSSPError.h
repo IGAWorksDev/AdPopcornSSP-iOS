@@ -29,7 +29,9 @@ typedef NS_ENUM(NSInteger, SSPErrorCode) {
     AdPopcornSSPNoInterstitialLoaded = 5003,
     AdPopcornSSPNoRewardVideoAdLoaded = 5005,
     AdPopcornSSPGdprConsentUnavailable = 5008,
-    AdPopcornSSPNoInterstitialVideoAdLoaded = 5009
+    AdPopcornSSPNoInterstitialVideoAdLoaded = 5009,
+    AdPopcornSSPNoSplashAdLoaded = 5010,
+    AdPopcornSSPNoModalAdLoaded = 5011
 };
 
 @interface AdPopcornSSPError : NSError

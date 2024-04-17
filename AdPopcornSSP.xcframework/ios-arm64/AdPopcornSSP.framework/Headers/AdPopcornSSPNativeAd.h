@@ -37,6 +37,11 @@ typedef enum _SSPNativeAdStatus
 @property (nonatomic, unsafe_unretained) NSInteger privacyIconLeftMargin;
 @property (nonatomic, unsafe_unretained) NSInteger privacyIconBottomtMargin;
 @property (nonatomic, unsafe_unretained) NSInteger privacyIconRightMargin;
+
+@property (nonatomic, unsafe_unretained) NSInteger templatePrivacyIconPosition;
+@property (nonatomic, unsafe_unretained) CGFloat templatePrivacyIconCornerRadius;
+@property (nonatomic, unsafe_unretained) CGFloat templateMainImageCornerRadius;
+@property (nonatomic, unsafe_unretained) CGFloat templateIconImageCornerRadius;
 @property (nonatomic, copy) NSString *placementId;
 @property (nonatomic, unsafe_unretained) BOOL useTemplate;
 
@@ -156,9 +161,9 @@ placementId 가져오기
 
 /*!
  @abstract
- momento renderer 및 super view 설정
+ vungle renderer 및 super view 설정
  */
-- (void)setMomentoRenderer:(id)momentoNativeAdRenderer superView:(UIView *)uiView;
+- (void)setVungleRenderer:(id)vungleNativeAdRenderer superView:(UIView *)uiView;
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>

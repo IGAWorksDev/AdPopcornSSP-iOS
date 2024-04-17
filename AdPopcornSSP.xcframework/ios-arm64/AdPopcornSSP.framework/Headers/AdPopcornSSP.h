@@ -46,6 +46,9 @@ typedef enum _AdPopcornSSPLogLevel
 @property (nonatomic, unsafe_unretained) NSInteger age;
 @property (nonatomic, unsafe_unretained) BOOL gdprAvailable;
 @property (nonatomic, copy) NSString *userId;
+@property (nonatomic, unsafe_unretained) int uidIdentityType;
+@property (nonatomic, copy) NSString *uidIdentifier;
+@property (nonatomic, copy) NSString *uidToken;
 @property (nonatomic, weak) id<APSSPMediationLogDelegate> mediationLogDelegate;
 @property (nonatomic, weak) id<APSSPSDKInitializeDelegate> initializeDelegate;
 
@@ -74,6 +77,7 @@ typedef enum _AdPopcornSSPLogLevel
  */
 
 + (void)initializeSDK:(NSString *)appKey;
++ (void)setUIDIdentifier:(int)identityType identifier:(NSString *)identifier;
 @end
 
 @protocol APSSPMediationLogDelegate <NSObject>
