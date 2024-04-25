@@ -132,11 +132,8 @@ typedef enum _SSPAdType
 // Modal Ad
 - (void)AdPopcornSSPAdapterModalAdLoadSuccess:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterModalAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
-- (void)AdPopcornSSPAdapterModalAdShowSuccess:(AdPopcornSSPAdapter *)adapter;
-- (void)AdPopcornSSPAdapterModalAdShowFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterModalAdClicked:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterModalAdClosed:(AdPopcornSSPAdapter *)adapter;
-
 // Common
 - (void)impClickTracking:(NSString *)url;
 @end

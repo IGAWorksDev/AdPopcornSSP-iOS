@@ -37,6 +37,7 @@ typedef enum _SSPNativeAdStatus
 @property (nonatomic, unsafe_unretained) NSInteger privacyIconLeftMargin;
 @property (nonatomic, unsafe_unretained) NSInteger privacyIconBottomtMargin;
 @property (nonatomic, unsafe_unretained) NSInteger privacyIconRightMargin;
+@property (nonatomic, unsafe_unretained) CGFloat privacyIconCornerRadius;
 
 @property (nonatomic, unsafe_unretained) NSInteger templatePrivacyIconPosition;
 @property (nonatomic, unsafe_unretained) CGFloat templatePrivacyIconCornerRadius;
