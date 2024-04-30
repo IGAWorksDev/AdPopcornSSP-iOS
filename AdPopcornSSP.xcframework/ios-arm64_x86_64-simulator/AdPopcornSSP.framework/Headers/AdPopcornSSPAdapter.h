@@ -30,6 +30,7 @@ typedef enum _SSPAdType
     SSPRewardVideoAdType,
     SSPInterstitialVideoAdType,
     SSPReactNativeAdType,
+    SSPModalAdType
 } SSPAdType;
 
 @interface AdPopcornSSPAdapter : NSObject
@@ -61,6 +62,8 @@ typedef enum _SSPAdType
 
 @property (nonatomic, unsafe_unretained, readonly) BOOL isSupportModalAd;
 
+@property (nonatomic, weak) UIView *modalRootView;
+
 - (void)setAge:(NSInteger)age;
 - (void)setGender:(SSPGender)gender;
 - (void)closeAd;
@@ -78,7 +81,7 @@ typedef enum _SSPAdType
 - (void)setMute:(bool)mute;
 - (void)setInAppBiddingMode:(bool)isInAppBiddingMode;
 - (void)setViewController:(UIViewController *)viewController reactNativeAd:(AdPopcornSSPReactNativeAd *)reactNativeAd;
-- (void)setModalAdViewController:(UIViewController *)viewController;
+- (void)setModalAdViewController:(UIViewController *)viewController rootView:(UIView *)modalRootView gravity:(int)adGravity closeBtnType:(int)closeBtnType;
 
 @property (NS_NONATOMIC_IOSONLY, readonly) CGSize adSize;
 @end
@@ -132,6 +135,8 @@ typedef enum _SSPAdType
 // Modal Ad
 - (void)AdPopcornSSPAdapterModalAdLoadSuccess:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterModalAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterModalAdShowSuccess:(AdPopcornSSPAdapter *)adapter;
+- (void)AdPopcornSSPAdapterModalAdShowFailError:(NSError *)error;
 - (void)AdPopcornSSPAdapterModalAdClicked:(AdPopcornSSPAdapter *)adapter;
 - (void)AdPopcornSSPAdapterModalAdClosed:(AdPopcornSSPAdapter *)adapter;
 // Common

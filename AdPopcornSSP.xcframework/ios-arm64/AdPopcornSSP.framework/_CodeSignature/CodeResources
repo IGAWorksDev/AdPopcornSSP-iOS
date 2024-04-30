@@ -224,7 +224,7 @@
 		</data>
 		<key>Headers/AdPopcornSSPAdapter.h</key>
 		<data>
-		ZyQ/XW3hjt6zhgCWzfUQzvlXNNI=
+		H+4qzvny70HeqlvlMm9rkolR2sI=
 		</data>
 		<key>Headers/AdPopcornSSPBannerView.h</key>
 		<data>
@@ -246,6 +246,10 @@
 		<data>
 		cb9f1jVkj7O26oqFVDC3iYABTz0=
 		</data>
+		<key>Headers/AdPopcornSSPModalAd.h</key>
+		<data>
+		cZ5ErfYzC8QIwNBx1sEcGelcDco=
+		</data>
 		<key>Headers/AdPopcornSSPNativeAd.h</key>
 		<data>
 		M+X5w9N8nF8uwBssVKjUtdeZyTM=
@@ -260,7 +264,7 @@
 		</data>
 		<key>Headers/AdPopcornSSPSDK.h</key>
 		<data>
-		kf/hHO98D7I0UYL0Mpv9YeQIxbg=
+		oU3maD4LLrEJAjp9FwvMHuQ/VMw=
 		</data>
 		<key>Headers/AdPopcornSSPSplashAd.h</key>
 		<data>
@@ -280,7 +284,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		ExTKOZWQWPb66etVuBmq/P1Mmv8=
+		jR5kks/wyXPVXeOvTLbLYPKn2g0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -657,7 +661,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Rwlfs6m1N6ZfRw1ejA8PtYkzT8xr727K7rUUzh+I1k=
+			5v+W3ju7nKzg7uu7B7i0q0HmZLchKzq865ZJf1U8JUo=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPBannerView.h</key>
@@ -695,6 +699,13 @@
 			LYo9ihjDW/W1UiAOSxspgNkGblVRZY/uXItC24a3B/8=
 			</data>
 		</dict>
+		<key>Headers/AdPopcornSSPModalAd.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7ooqMze+Awy5FCzNwdP+mLdjeGEfKOVYuuELbn0Xz2w=
+			</data>
+		</dict>
 		<key>Headers/AdPopcornSSPNativeAd.h</key>
 		<dict>
 			<key>hash2</key>
@@ -720,7 +731,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LJQsQ6L6yt88BYkPKNX2HKgEhsi7Fj2Ps0qGt62MRzQ=
+			j3zXDiAXetaPIc40GagbY8e2/5ImvMa1LCvHeorG5nA=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPSplashAd.h</key>
@@ -748,7 +759,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cx5pgO1o0Coxan2sFbrNYXhfC8YIy/fBQh3tn+XNXIs=
+			gOOIgdv7OxZfnvNc+kOyjqwA1bGAWKEnWIwpQZOEHJ8=
 			</data>
 		</dict>
 	</dict>
