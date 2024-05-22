@@ -40,6 +40,7 @@ typedef enum _AdPopcornSSPLogLevel
 @interface AdPopcornSSP : NSObject
 
 + (NSString *)getSDKVersion;
++ (NSString *)getSDKVersionNum;
 + (NSString *)frameworkName;
 
 @property (nonatomic, unsafe_unretained) SSPGender gender;

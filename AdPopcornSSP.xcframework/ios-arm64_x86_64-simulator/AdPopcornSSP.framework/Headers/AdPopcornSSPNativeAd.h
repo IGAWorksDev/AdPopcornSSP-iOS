@@ -43,6 +43,10 @@ typedef enum _SSPNativeAdStatus
 @property (nonatomic, unsafe_unretained) CGFloat templatePrivacyIconCornerRadius;
 @property (nonatomic, unsafe_unretained) CGFloat templateMainImageCornerRadius;
 @property (nonatomic, unsafe_unretained) CGFloat templateIconImageCornerRadius;
+@property (nonatomic, unsafe_unretained) NSInteger templatePrivacyIconTopMargin;
+@property (nonatomic, unsafe_unretained) NSInteger templatePrivacyIconLeftMargin;
+@property (nonatomic, unsafe_unretained) NSInteger templatePrivacyIconBottomMargin;
+@property (nonatomic, unsafe_unretained) NSInteger templatePrivacyIconRightMargin;
 @property (nonatomic, copy) NSString *placementId;
 @property (nonatomic, unsafe_unretained) BOOL useTemplate;
 

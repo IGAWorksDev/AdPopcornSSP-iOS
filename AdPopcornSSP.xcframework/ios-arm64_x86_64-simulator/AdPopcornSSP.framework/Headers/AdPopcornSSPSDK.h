@@ -20,3 +20,4 @@
 #import "AdPopcornSSPReactNativeAd.h"
 #import "AdPopcornSSPSplashAd.h"
 #import "AdPopcornSSPModalAd.h"
+#import "AdPopcornSSPContentsAd.h"
