@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lHgM8vEO1O2HbPNMAXsc4Gp9bww=
+			Odh5Oi1CLSxyuKZUKVMm1rdjoR4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -209,14 +209,14 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ywoCWV+a3BtH3WfabI4b8BPg/oY=
+			Odh5Oi1CLSxyuKZUKVMm1rdjoR4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Headers/AdPopcornSSP.h</key>
 		<data>
-		Vqp+7SBC5u5YHFCMluv68sI3KI4=
+		kTVUCQ6DjMkcZSEyO6H/i4GQ9Qo=
 		</data>
 		<key>Headers/AdPopcornSSPAdSize.h</key>
 		<data>
@@ -240,7 +240,7 @@
 		</data>
 		<key>Headers/AdPopcornSSPError.h</key>
 		<data>
-		HBVDhtLLaOt/NE1OszrPo2o8Qy0=
+		4Q9+ZHNKqvuernXen5CZWDysIOU=
 		</data>
 		<key>Headers/AdPopcornSSPInterstitialAd.h</key>
 		<data>
@@ -264,7 +264,7 @@
 		</data>
 		<key>Headers/AdPopcornSSPRewardVideoAd.h</key>
 		<data>
-		FyfW+5wsOVu7kisbhDLvuKBPN+4=
+		HfpgoyulDq2g+/ZRU/9GThUMRkw=
 		</data>
 		<key>Headers/AdPopcornSSPSDK.h</key>
 		<data>
@@ -284,7 +284,7 @@
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		jDT0uSheXpZU0jovLzn1oPFg5og=
+		LmXpLEOlWRia9/ZoWBr9BP2xduM=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -297,7 +297,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOD6W7Swy0KSIefX2CbqnPUidLdhE04PedE+AsMri/c=
+			ztaAi0sUxGCrT6tiwkQpGRgXg1EmfLrIjCi7XbIIT6k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -642,7 +642,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iCJP70Bbg2YZwcLhst46EkMf+dg1Q5TuXWEApzVMhw4=
+			ztaAi0sUxGCrT6tiwkQpGRgXg1EmfLrIjCi7XbIIT6k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -651,7 +651,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P6pOz7tu/rqJpKcV0iYw39qL1reSlFfQRewC30rqEzw=
+			1EmRfVhlMXP87vamsK33uYqSyY89irF8dQgbNlEgwfQ=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPAdSize.h</key>
@@ -693,7 +693,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qw1d+nJsn853uIvY/V9NRmxLHwvvw/ZYOkH9x/QgI0Y=
+			knlqzkiQnFRVWcPV31AsN/14Q5vk0HrXQh+DXWqsZN8=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPInterstitialAd.h</key>
@@ -735,7 +735,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hBXwrJx7CTVoqhpD5vyqga8H4wTDvUj3f8cxpZrBFwE=
+			boyQIyTUaMoIUyyzIZPr+FWg6/bXu7nsussuGsshDn4=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPSDK.h</key>
@@ -763,7 +763,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1aZ0eQL3UyY2+LrUEl/KhEeBJv9IqT9+0x3OzO7uNIo=
+			MdyN65nzE0U1oAuIurwAEAtyS1QeJEci/c3b3eftgg0=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

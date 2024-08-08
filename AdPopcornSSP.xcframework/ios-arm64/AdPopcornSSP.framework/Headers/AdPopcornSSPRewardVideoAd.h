@@ -53,6 +53,11 @@ typedef enum _SSPRewardVideoAdStatus
 - (NSInteger)getCurrentNetwork;
 - (void)stopAd;
 
+/*!
+ @abstract
+ use internal purpose.
+ */
+- (void)internalRewardPlusAction;
 @end
 
 @protocol APSSPRewardVideoAdDelegate <NSObject>

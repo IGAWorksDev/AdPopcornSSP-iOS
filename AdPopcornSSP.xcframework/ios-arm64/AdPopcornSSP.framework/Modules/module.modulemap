@@ -12,6 +12,9 @@ framework module AdPopcornSSP {
     header "AdPopcornSSPWKScriptMessageHandler.h"
     header "AdPopcornSSPError.h"
     header "AdPopcornSSPReactNativeAd.h"
+    header "AdPopcornSSPSplashAd.h"
+    header "AdPopcornSSPModalAd.h"
+    header "AdPopcornSSPContentsAd.h"
     export *
  
     module * {

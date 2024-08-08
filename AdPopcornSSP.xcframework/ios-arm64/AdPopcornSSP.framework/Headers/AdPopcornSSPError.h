@@ -13,6 +13,7 @@ extern NSString *const kAdPopcornSSPErrorDomain;
 
 /// NSError codes for GAD error domain.
 typedef NS_ENUM(NSInteger, SSPErrorCode) {
+    AdPopcornSSPSuccess = 1,
     AdPopcornSSPException = 200,
     AdPopcornSSPInvalidParameter = 1000,
     AdPopcornSSPUnknownServerError = 9999,
@@ -31,7 +32,14 @@ typedef NS_ENUM(NSInteger, SSPErrorCode) {
     AdPopcornSSPGdprConsentUnavailable = 5008,
     AdPopcornSSPNoInterstitialVideoAdLoaded = 5009,
     AdPopcornSSPNoSplashAdLoaded = 5010,
-    AdPopcornSSPNoModalAdLoaded = 5011
+    AdPopcornSSPNoModalAdLoaded = 5011,
+    AdPopcornRewardPlusDailyUserLimitExceeded = 6001,
+    AdPopcornRewardPlusDailySSPLimitExceeded = 6002,
+    AdPopcornRewardPlusUserNotRegistered = 6003,
+    AdPopcornRewardPlusNPayMemberInfoNotFound = 6004,
+    AdPopcornRewardPlusDuplicatePointAddRequest = 6005,
+    AdPopcornRewardPlusFailedToAddPoint = 6006,
+    AdPopcornRewardPlusUserAlreadyRegistered = 6007,
 };
 
 @interface AdPopcornSSPError : NSError

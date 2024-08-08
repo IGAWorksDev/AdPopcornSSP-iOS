@@ -51,3 +51,8 @@
 
 "directInput" = "직접입력";
 "cs" = "문의하기";
+"apssp_default_unknown_error" = "서버 연결이 원활하지 않습니다. 잠시 후 다시 시도해 주세요.";
+"apssp_npay_point_success" = "Npay 포인트 지급 요청에 성공했습니다. 10분 이내 지급 됩니다.";
+"apssp_npay_point_error_user_limit" = "네이버페이 일 적립 한도를 달성했습니다.";
+"apssp_npay_point_error_ssp_limit" = "네이버페이 최대 적립 한도를 달성했습니다.";
+"apssp_npay_point_error_duplicate" = "네이버페이 중복 적립 요청이 발생하였습니다.";
