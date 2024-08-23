@@ -41,7 +41,6 @@ typedef enum _SSPBannerAdStatus
 @interface AdPopcornSSPBannerView : UIView
 
 @property (nonatomic, weak) id<APSSPBannerViewDelegate> delegate;
-// Default 시간은 60초이며, 30~120초 사이로 설정 가능. 단, -1초로 설정 시, refresh 사용 안함.
 @property (nonatomic, unsafe_unretained) NSInteger adRefreshRate;
 @property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, copy) NSString *placementId;
@@ -99,6 +98,12 @@ typedef enum _SSPBannerAdStatus
  banner 광고 애니메이션 타입 설정.
  */
 - (void)setAnimType:(SSPBannerViewAnimationType)animType;
+
+/*!
+ @abstract
+ banner 광고 expire 여부 확인.
+ */
+- (BOOL)isExpired;
 @end
 
 

@@ -106,6 +106,11 @@ placementId 가져오기
 
 /*!
  @abstract
+ 네이티브 광고 expire 여부 확인.
+ */
+- (BOOL)isExpired;
+/*!
+ @abstract
  apssp renderer 및 super view 설정
  */
 - (void)setApSSPRenderer:(id)apSSPNativeAdRenderer superView:(UIView *)uiView;
