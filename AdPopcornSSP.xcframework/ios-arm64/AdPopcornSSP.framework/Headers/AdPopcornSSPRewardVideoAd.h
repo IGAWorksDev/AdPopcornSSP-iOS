@@ -97,5 +97,11 @@ typedef enum _SSPRewardVideoAdStatus
  AP SSP reward video 재생 완료 시 호출된다.
  */
 - (void)APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd *)rewardVideoAd adNetworkNo:(long) adNetworkNo completed:(BOOL)completed;
+
+/*!
+ @abstract
+ AP SSP reward plus 리워드 적립 요청 완료 시 호출된다.
+ */
+- (void)APSSPRewardPlusCompleteResult:(BOOL)result resultCode:(int) resultCode reward:(int)reward;
 @end
 

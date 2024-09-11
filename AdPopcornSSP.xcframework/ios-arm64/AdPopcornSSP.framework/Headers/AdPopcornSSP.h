@@ -11,6 +11,7 @@
 
 @protocol APSSPMediationLogDelegate;
 @protocol APSSPSDKInitializeDelegate;
+@protocol APSSPRewardPlusSettingDelegate;
 
 typedef enum _SSPGender
 {
@@ -52,6 +53,7 @@ typedef enum _AdPopcornSSPLogLevel
 @property (nonatomic, copy) NSString *uidToken;
 @property (nonatomic, weak) id<APSSPMediationLogDelegate> mediationLogDelegate;
 @property (nonatomic, weak) id<APSSPSDKInitializeDelegate> initializeDelegate;
+@property (nonatomic, weak) id<APSSPRewardPlusSettingDelegate> rewardPlusDelegate;
 
 + (AdPopcornSSP *)sharedInstance;
 /*!
@@ -80,6 +82,7 @@ typedef enum _AdPopcornSSPLogLevel
 + (void)initializeSDK:(NSString *)appKey;
 + (void)setUIDIdentifier:(int)identityType identifier:(NSString *)identifier;
 + (void)openRewardPlusSettingViewController:(NSString *)appKey viewCotroller:(UIViewController *)vController;
++ (void)getRewardPlusUserSetting:(NSString *)appKey;
 @end
 
 @protocol APSSPMediationLogDelegate <NSObject>
@@ -105,4 +108,8 @@ typedef enum _AdPopcornSSPLogLevel
 
 @protocol APSSPSDKInitializeDelegate <NSObject>
 - (void)AdPopcornSSPSDKDidInitialize;
+@end
+
+@protocol APSSPRewardPlusSettingDelegate <NSObject>
+- (void)APSSPRewardPlusSettingInfo:(NSString *)connectedId dailyUserLimit:(int)dailyUserLimit dailyUserCount:(int)dailyUserCount;
 @end
