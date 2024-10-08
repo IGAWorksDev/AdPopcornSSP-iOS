@@ -83,6 +83,8 @@ typedef enum _AdPopcornSSPLogLevel
 + (void)setUIDIdentifier:(int)identityType identifier:(NSString *)identifier;
 + (void)openRewardPlusSettingViewController:(NSString *)appKey viewCotroller:(UIViewController *)vController;
 + (void)getRewardPlusUserSetting:(NSString *)appKey;
++ (void)tagForChildDirectedTreatment:(BOOL)tag;
+
 @end
 
 @protocol APSSPMediationLogDelegate <NSObject>

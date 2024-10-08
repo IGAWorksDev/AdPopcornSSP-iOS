@@ -52,6 +52,6 @@
  @abstract
  컨텐츠 페이지 내 광고 참여 완료 시 호출된다.
  */
-- (void)APSSPContentsAdComplete:(AdPopcornSSPContentsAd *)contentsAd reward:(NSInteger)reward;
+- (void)APSSPContentsAdComplete:(AdPopcornSSPContentsAd *)contentsAd reward:(NSInteger)reward rewardKey:(NSString *)rewardKey;
 
 @end
