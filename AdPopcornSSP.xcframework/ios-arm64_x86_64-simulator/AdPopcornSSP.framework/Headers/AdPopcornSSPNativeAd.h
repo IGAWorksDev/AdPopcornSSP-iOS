@@ -174,6 +174,12 @@ placementId 가져오기
  vungle renderer 및 super view 설정
  */
 - (void)setVungleRenderer:(id)vungleNativeAdRenderer superView:(UIView *)uiView;
+
+/*!
+ @abstract
+ adforus renderer 및 super view 설정
+ */
+- (void)setAdForusRenderer:(id)adforusNativeAdRenderer superView:(UIView *)uiView;
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>
