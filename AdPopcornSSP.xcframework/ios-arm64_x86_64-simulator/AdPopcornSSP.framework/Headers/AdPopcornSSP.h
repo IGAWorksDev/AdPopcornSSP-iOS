@@ -114,4 +114,5 @@ typedef enum _AdPopcornSSPLogLevel
 
 @protocol APSSPRewardPlusSettingDelegate <NSObject>
 - (void)APSSPRewardPlusSettingInfo:(NSString *)connectedId dailyUserLimit:(int)dailyUserLimit dailyUserCount:(int)dailyUserCount;
+- (void)APSSPRewardPlusSettingPageClosed;
 @end

@@ -38,19 +38,19 @@
 
 /*!
  @abstract
- 컨텐츠 페이지 로딩 실패한 경우 호출된다.
+ 콘텐츠 페이지 로딩 실패한 경우 호출된다.
  */
 - (void)APSSPContentsAdOpenFail:(AdPopcornSSPContentsAd *)contentsAd error:(AdPopcornSSPError *)error;
 
 /*!
  @abstract
- 컨텐츠 페이지가 종료 될 때 호출된다.
+ 콘텐츠 페이지가 종료 될 때 호출된다.
  */
 - (void)APSSPContentsAdClosed:(AdPopcornSSPContentsAd *)contentsAd;
 
 /*!
  @abstract
- 컨텐츠 페이지 내 광고 참여 완료 시 호출된다.
+ 콘텐츠 페이지 내 광고 참여 완료 시 호출된다.
  */
 - (void)APSSPContentsAdComplete:(AdPopcornSSPContentsAd *)contentsAd reward:(NSInteger)reward rewardKey:(NSString *)rewardKey;
 

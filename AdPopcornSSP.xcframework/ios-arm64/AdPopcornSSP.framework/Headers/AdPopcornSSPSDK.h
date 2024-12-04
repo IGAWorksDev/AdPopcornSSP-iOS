@@ -21,3 +21,4 @@
 #import "AdPopcornSSPSplashAd.h"
 #import "AdPopcornSSPModalAd.h"
 #import "AdPopcornSSPContentsAd.h"
+#import "AdPopcornSSPPopContentsAd.h"
