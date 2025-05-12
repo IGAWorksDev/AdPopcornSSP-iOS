@@ -1,0 +1,43 @@
+framework module AdPopcornSSP {
+    umbrella header "AdPopcornSSPSDK.h"
+    header "AdPopcornSSP.h"
+    header "AdPopcornSSPAdapter.h"
+    header "AdPopcornSSPAdSize.h"
+    header "AdPopcornSSPBannerView.h"
+    header "AdPopcornSSPInterstitialAd.h"
+    header "AdPopcornSSPNativeAd.h"
+    header "AdPopcornSSPCustomAd.h"
+    header "AdPopcornSSPRewardVideoAd.h"
+    header "AdPopcornSSPInterstitialVideoAd.h"
+    header "AdPopcornSSPWKScriptMessageHandler.h"
+    header "AdPopcornSSPError.h"
+    header "AdPopcornSSPReactNativeAd.h"
+    header "AdPopcornSSPSplashAd.h"
+    header "AdPopcornSSPModalAd.h"
+    header "AdPopcornSSPContentsAd.h"
+    export *
+ 
+    module * {
+         export *
+     }
+
+    link framework "AdSupport"
+    link framework "MobileCoreServices"
+    link framework "MessageUI"
+    link framework "MediaPlayer"
+    link framework "AVKit"
+    link framework "AVFoundation"
+    link framework "CoreMedia"
+    link framework "CoreTelephony"
+    link framework "SystemConfiguration"
+    link framework "WebKit"
+    link framework "Security"
+    link framework "UIKit"
+    link framework "CoreGraphics"
+    link framework "QuartzCore"
+    
+    link "xml2"
+}
+
+
+
