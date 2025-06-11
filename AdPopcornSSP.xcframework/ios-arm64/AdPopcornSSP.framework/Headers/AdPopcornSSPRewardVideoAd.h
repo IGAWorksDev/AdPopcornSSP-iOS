@@ -26,6 +26,7 @@ typedef enum _SSPRewardVideoAdStatus
 @property (nonatomic, unsafe_unretained, getter = isRewardVideoAdIsVisible) BOOL rewardVideoAdIsVisible;
 @property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, copy) NSString *placementId;
+@property (nonatomic, copy) NSString *adRequestNo;
 
 /*!
  @abstract

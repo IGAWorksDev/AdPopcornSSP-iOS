@@ -214,6 +214,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Headers/APSSPRewardAdPlusStatusModel.h</key>
+		<data>
+		Q07kCQ4B0N54lK89sWwg3AdKIIc=
+		</data>
 		<key>Headers/AdPopcornSSP.h</key>
 		<data>
 		uYvqfTvfpO2TCDwTUli7tcCFf+A=
@@ -224,7 +228,7 @@
 		</data>
 		<key>Headers/AdPopcornSSPAdapter.h</key>
 		<data>
-		H+4qzvny70HeqlvlMm9rkolR2sI=
+		kC3ByaP+kmxhziqT1TmkOIqTLOM=
 		</data>
 		<key>Headers/AdPopcornSSPBannerView.h</key>
 		<data>
@@ -244,11 +248,11 @@
 		</data>
 		<key>Headers/AdPopcornSSPInterstitialAd.h</key>
 		<data>
-		9nc0RKVApVeS4OVoEd6LRspN8TU=
+		HdRivwDAvHpOHCrrT2F7U6YqzmA=
 		</data>
 		<key>Headers/AdPopcornSSPInterstitialVideoAd.h</key>
 		<data>
-		cb9f1jVkj7O26oqFVDC3iYABTz0=
+		jm1fqu9aHhTOd35H3QoYi3qxKp0=
 		</data>
 		<key>Headers/AdPopcornSSPModalAd.h</key>
 		<data>
@@ -256,7 +260,7 @@
 		</data>
 		<key>Headers/AdPopcornSSPNativeAd.h</key>
 		<data>
-		LcoDEDhZ5em0fTh0HbNeQDyQZjo=
+		IxR3+2OHQQwGiSyV02pb2652a9I=
 		</data>
 		<key>Headers/AdPopcornSSPPopContentsAd.h</key>
 		<data>
@@ -266,17 +270,25 @@
 		<data>
 		AcVPBJa1H5Is4bmXpUx1tP9Qb3M=
 		</data>
+		<key>Headers/AdPopcornSSPRewardAdPlus.h</key>
+		<data>
+		ewo8ncp5K4iviwWrpwkOMGP5hpc=
+		</data>
 		<key>Headers/AdPopcornSSPRewardVideoAd.h</key>
 		<data>
-		wB3bROxhQo2rOLL3U7eH2HDJb+4=
+		rAVo/jv2MN+dZw5ZJ8bb9VVP+EI=
 		</data>
 		<key>Headers/AdPopcornSSPSDK.h</key>
 		<data>
-		5xqeE6RQmmBHQQge9HpzNpDWaBo=
+		EenHNrk7uQflYKwtt3i3Y/tCA3s=
 		</data>
 		<key>Headers/AdPopcornSSPSplashAd.h</key>
 		<data>
 		dubPTmldTnX4vszYJZLDl6Lc1rM=
+		</data>
+		<key>Headers/AdPopcornSSPVideoMixAd.h</key>
+		<data>
+		JVELUJrKVoHbq1ggo7L7LHvw4/s=
 		</data>
 		<key>Headers/AdPopcornSSPWKScriptMessageHandler.h</key>
 		<data>
@@ -286,9 +298,13 @@
 		<data>
 		WdEUgoRkai0SAzudJEMRvqLSFnw=
 		</data>
+		<key>LICENSE</key>
+		<data>
+		Mx1ghD5bgHvpc9euQ/q26x1XfyI=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		LmXpLEOlWRia9/ZoWBr9BP2xduM=
+		sA4ylW1dKPOcJGEP9kasYO1TKM4=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -651,6 +667,13 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Headers/APSSPRewardAdPlusStatusModel.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H8adkh0QYwsWG9Dt5c5iHqaWICbiQkbkAdehCWktUto=
+			</data>
+		</dict>
 		<key>Headers/AdPopcornSSP.h</key>
 		<dict>
 			<key>hash2</key>
@@ -669,7 +692,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5v+W3ju7nKzg7uu7B7i0q0HmZLchKzq865ZJf1U8JUo=
+			o48efafLkFL5LIugr1Td1sOD35Vki/Q2C+esmmQRR9Y=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPBannerView.h</key>
@@ -704,14 +727,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L9KKh3YfDExmWT7Plf4zJLwxI1Gn3h/fUBxCRsgsnvA=
+			Z3yoYOZhq1Mw9ucVHXVJS27kIw9N6hy64okD7cYEAnk=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPInterstitialVideoAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LYo9ihjDW/W1UiAOSxspgNkGblVRZY/uXItC24a3B/8=
+			XiAZgQ7FFe8JfV/9T9pEpZwlOe40nyzuua1JcIDU1sU=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPModalAd.h</key>
@@ -725,7 +748,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H79szyW7Qh04AG8cQALoZaZ8quuYJ5VleZ77Z9ozxDY=
+			NpcRoGZczP6vviBsBsk5HGHbIwia6c48ydagVqBZ4mM=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPPopContentsAd.h</key>
@@ -742,18 +765,25 @@
 			LY1mXcP25ubIokvlDXbP02a97u2DEFPk7EAoj5fzFO4=
 			</data>
 		</dict>
+		<key>Headers/AdPopcornSSPRewardAdPlus.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			F9MRr6pqOuqGtXbdXnQcbkV6i5tMZ76Fet9jx2JuV+E=
+			</data>
+		</dict>
 		<key>Headers/AdPopcornSSPRewardVideoAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ivp5eJorryl78LfiZqA4KpOot5D8PQTM+cZWtXmeqO8=
+			4kYEWKa7O23blpfZ/fKQ1dLpQNdAsQa/KKLy1inMFMQ=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vHa/dnY/pYKWg3KMTjR8O8MpCwNYRdDzHOMTD2W10LA=
+			JA2cAcOQZtUnx/hfLh6rV8X43SV5uhd0sXtJ9mkwlBk=
 			</data>
 		</dict>
 		<key>Headers/AdPopcornSSPSplashAd.h</key>
@@ -763,6 +793,13 @@
 			amqfV4Of5HP7Pl3nFKW/H0VOMcHUtYi3arxsRuSCBmo=
 			</data>
 		</dict>
+		<key>Headers/AdPopcornSSPVideoMixAd.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sVnifOzaxtNpFSq9XgmSkkGIxa0twu7H18NOKE0Qgkk=
+			</data>
+		</dict>
 		<key>Headers/AdPopcornSSPWKScriptMessageHandler.h</key>
 		<dict>
 			<key>hash2</key>
@@ -770,11 +807,18 @@
 			Nk6KIawoDdZKiqPmaw6mb0i7Q1bxbrK+MJ0S9FVpNTw=
 			</data>
 		</dict>
+		<key>LICENSE</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dDkkmoihuUt6zG6N6is45jOBa3PEynqik9qJq/RC2FE=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MdyN65nzE0U1oAuIurwAEAtyS1QeJEci/c3b3eftgg0=
+			TOuKHzqyNdjxDRcwEJ0vmE7bnGxIck467uAdZLggUGs=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

@@ -30,8 +30,17 @@ typedef enum _SSPAdType
     SSPRewardVideoAdType,
     SSPInterstitialVideoAdType,
     SSPReactNativeAdType,
+    SSPVideoMixAdType,
     SSPModalAdType
 } SSPAdType;
+
+typedef enum _VideoMixAdType {
+    VideoMix_InterstitialType = 2,
+    VideoMix_RewardVideoType = 4,
+    VideoMix_InterstitialVideoType = 6
+} VideoMixAdType;
+
+VideoMixAdType SSPVideoMixAdTypeFromInteger(NSInteger value);
 
 @interface AdPopcornSSPAdapter : NSObject
 {
@@ -51,6 +60,8 @@ typedef enum _SSPAdType
 @property (nonatomic, weak) AdPopcornSSPBannerView *bannerView;
 
 @property (nonatomic, unsafe_unretained, readonly) BOOL isSupportRewardVideoAd;
+
+@property (nonatomic, unsafe_unretained, readonly) BOOL isSupportVideoMixAd;
 
 @property (nonatomic, unsafe_unretained, readonly) BOOL isSupportNativeAd;
 
@@ -74,6 +85,7 @@ typedef enum _SSPAdType
 - (void)loadAd;
 - (void)showAd;
 - (void)setRewardVideoViewController:(UIViewController *)viewController;
+- (void)setVideoMixAdViewController:(UIViewController *)viewController;
 - (void)setNativeAdViewController:(UIViewController *)viewController nativeAdRenderer:(id)nativeAdRenderer rootNativeAdView:(AdPopcornSSPNativeAd *)adpopcornSSPNativeAd;
 - (void)setInterstitialVideoViewController:(UIViewController *)viewController;
 - (NSString *)getBiddingToken;
@@ -141,4 +153,14 @@ typedef enum _SSPAdType
 - (void)AdPopcornSSPAdapterModalAdClosed:(AdPopcornSSPAdapter *)adapter;
 // Common
 - (void)impClickTracking:(NSString *)url;
+
+// Video Mix
+- (void)AdPopcornSSPAdapterVideoMixAdLoadSuccess:(AdPopcornSSPAdapter *)adapter videoMixType: (VideoMixAdType) type;
+- (void)AdPopcornSSPAdapterVideoMixAdLoadFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter videoMixType: (VideoMixAdType) type;
+- (void)AdPopcornSSPAdapterVideoMixAdShowSuccess:(AdPopcornSSPAdapter *)adapter videoMixType: (VideoMixAdType) type;
+- (void)AdPopcornSSPAdapterVideoMixAdShowFailError:(NSError *)error adapter:(AdPopcornSSPAdapter *)adapter videoMixType: (VideoMixAdType) type;
+- (void)AdPopcornSSPAdapterVideoMixAdClicked:(AdPopcornSSPAdapter *)adapter videoMixType: (VideoMixAdType) type;
+- (void)AdPopcornSSPAdapterVideoMixAdClose:(AdPopcornSSPAdapter *)adapter videoMixType: (VideoMixAdType) type;
+- (void)AdPopcornSSPAdapterVideoMixAdCompleteTrackingEvent:(NSInteger)adNetworkNo isCompleted:(bool)isCompleted videoMixType: (VideoMixAdType) type;
+
 @end

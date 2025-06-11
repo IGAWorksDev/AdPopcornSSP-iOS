@@ -15,6 +15,9 @@ framework module AdPopcornSSP {
     header "AdPopcornSSPSplashAd.h"
     header "AdPopcornSSPModalAd.h"
     header "AdPopcornSSPContentsAd.h"
+    header "AdPopcornSSPRewardAdPlus.h"
+    header "AdPopcornSSPVideoMixAd.h"
+    header "APSSPRewardAdPlusStatusModel.h"
     export *
  
     module * {

@@ -180,6 +180,7 @@ placementId 가져오기
  adforus renderer 및 super view 설정
  */
 - (void)setAdForusRenderer:(id)adforusNativeAdRenderer superView:(UIView *)uiView;
+
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>

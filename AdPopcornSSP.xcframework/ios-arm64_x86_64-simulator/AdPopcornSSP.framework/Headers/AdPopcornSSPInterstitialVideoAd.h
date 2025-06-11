@@ -23,6 +23,7 @@ typedef enum _SSPInterstitialVideoAdStatus
 @property (nonatomic, weak) id<APSSPInterstitialVideoAdDelegate> delegate;
 @property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, copy) NSString *placementId;
+@property (nonatomic, copy) NSString *adRequestNo;
 
 /*!
  @abstract

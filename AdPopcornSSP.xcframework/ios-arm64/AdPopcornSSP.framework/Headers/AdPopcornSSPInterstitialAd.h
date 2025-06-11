@@ -23,6 +23,7 @@ typedef enum _SSPInterstitialAdStatus
 @property (nonatomic, weak) id<APSSPInterstitialAdDelegate> delegate;
 @property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, copy) NSString *placementId;
+@property (nonatomic, copy) NSString *adRequestNo;
 @property (nonatomic, strong) UIColor *backgroundColor;
 
 /*!
