@@ -33,6 +33,7 @@ typedef NS_ENUM(NSInteger, SSPErrorCode) {
     AdPopcornSSPNoInterstitialVideoAdLoaded = 5009,
     AdPopcornSSPNoSplashAdLoaded = 5010,
     AdPopcornSSPNoModalAdLoaded = 5011,
+    AdPopcornSSPNoVideoMixAdLoaded = 5012,
     AdPopcornRewardPlusDailyUserLimitExceeded = 6001,
     AdPopcornRewardPlusDailySSPLimitExceeded = 6002,
     AdPopcornRewardPlusUserNotRegistered = 6003,

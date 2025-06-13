@@ -7,6 +7,32 @@
 
 #import <UIKit/UIKit.h>
 
+// pointbox 지급 관련 message
+typedef enum {
+    AdPopcornRewardPlusClaimPointBoxSuccess = 1,
+    AdPopcornRewardPlusClaimPointBoxFail = 2,
+    AdPopcornRewardPlusClaimPointBoxFail_6108 = 6108,
+    AdPopcornRewardPlusClaimPointBoxFail_6109 = 6109,
+} _SSPRewardPlusClaimBoxErrorCode;
+
+typedef signed short SSPRewardPlusClaimBoxErrorCode;
+
+
+static inline NSString * SSPRewardPlusClaimBoxString(SSPRewardPlusClaimBoxErrorCode state) {
+    switch (state) {
+        case AdPopcornRewardPlusClaimPointBoxSuccess:
+            return @"포인트 박스 적립 성공";
+        case AdPopcornRewardPlusClaimPointBoxFail:
+            return @"포인트박스 적립에 실패하였습니다.";
+        case AdPopcornRewardPlusClaimPointBoxFail_6108:
+            return @"포인트박스 일 적립 한도를 달성했습니다.";
+        case AdPopcornRewardPlusClaimPointBoxFail_6109:
+            return @"포인트박스 최대 적립 한도를 달성했습니다.";
+        default:
+            return @"state";
+    }
+}
+
 
 @protocol APSSPRewardAdPlusEventDelegate;
 
