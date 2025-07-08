@@ -72,15 +72,11 @@ static inline NSString * SSPRewardPlusClaimBoxString(SSPRewardPlusClaimBoxErrorC
                                    totalBoxCount:(NSInteger)totalBoxCount
                            placementStatusList:(NSArray*)placementStatusList;
 
-@optional
 - (void)rewardAdPlusUserPlacementStatusWithResult:(BOOL)result
                                         placementId:(NSString *)placementId
                                    dailyUserLimit:(NSInteger)dailyUserLimit
                                    dailyUserCount:(NSInteger)dailyUserCount;
-@optional
 - (void) closedRewardAdPlusPage;
 
-@optional
 - (void) eventResult:(int)resultCode resultMessage: (NSString*)message;
-
 @end
