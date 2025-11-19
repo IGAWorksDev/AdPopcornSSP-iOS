@@ -79,4 +79,5 @@ static inline NSString * SSPRewardPlusClaimBoxString(SSPRewardPlusClaimBoxErrorC
 - (void) closedRewardAdPlusPage;
 
 - (void) eventResult:(int)resultCode resultMessage: (NSString*)message;
+
 @end
