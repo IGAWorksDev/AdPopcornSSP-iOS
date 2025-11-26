@@ -14,4 +14,6 @@
 @property (nonatomic, assign) NSInteger current;
 @property (nonatomic, assign) NSInteger limit;
 
+- (NSDictionary *)toDictionary;
+
 @end
