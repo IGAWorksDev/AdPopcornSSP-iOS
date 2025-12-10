@@ -24,6 +24,7 @@ typedef enum _SSPInterstitialVideoAdStatus
 @property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, copy) NSString *placementId;
 @property (nonatomic, copy) NSString *adRequestNo;
+@property (nonatomic, unsafe_unretained, getter = isResult) BOOL isRVPlusOpen;
 
 /*!
  @abstract

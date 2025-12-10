@@ -25,6 +25,7 @@ typedef enum _SSPInterstitialAdStatus
 @property (nonatomic, copy) NSString *placementId;
 @property (nonatomic, copy) NSString *adRequestNo;
 @property (nonatomic, strong) UIColor *backgroundColor;
+@property (nonatomic, unsafe_unretained, getter = isResult) BOOL isRVPlusOpen;
 
 /*!
  @abstract

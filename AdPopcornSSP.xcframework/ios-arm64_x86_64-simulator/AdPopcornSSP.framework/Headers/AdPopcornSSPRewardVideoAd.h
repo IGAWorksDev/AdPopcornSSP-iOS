@@ -27,7 +27,7 @@ typedef enum _SSPRewardVideoAdStatus
 @property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, copy) NSString *placementId;
 @property (nonatomic, copy) NSString *adRequestNo;
-
+@property (nonatomic, unsafe_unretained, getter = isResult) BOOL isRVPlusOpen;
 /*!
  @abstract
  reward video ad instance 생성.
