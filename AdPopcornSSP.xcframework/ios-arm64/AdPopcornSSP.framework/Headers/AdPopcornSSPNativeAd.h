@@ -182,6 +182,12 @@ placementId 가져오기
  */
 - (void)setAdForusRenderer:(id)adforusNativeAdRenderer superView:(UIView *)uiView;
 
+/*!
+ @abstract
+ fyber renderer 및 super view 설정
+ */
+- (void)setFyberRenderer:(id)fyberNativeAdRenderer superView:(UIView *)uiView;
+
 @end
 
 @protocol APSSPNativeAdDelegate <NSObject>
