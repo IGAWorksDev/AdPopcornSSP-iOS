@@ -24,14 +24,14 @@ typedef enum _SSPMediationGender
 
 typedef enum _SSPAdType
 {
-    SSPAdBannerType,
-    SSPAdInterstitialType,
-    SSPNativeAdType,
-    SSPRewardVideoAdType,
-    SSPInterstitialVideoAdType,
-    SSPReactNativeAdType,
-    SSPVideoMixAdType,
-    SSPModalAdType
+    SSPAdBannerType = 1,
+    SSPAdInterstitialType = 2,
+    SSPNativeAdType = 3,
+    SSPRewardVideoAdType = 4,
+    SSPInterstitialVideoAdType = 6,
+    SSPModalAdType = 8,
+    SSPVideoMixAdType = 13,
+    SSPReactNativeAdType = 99,
 } SSPAdType;
 
 typedef enum _VideoMixAdType {
